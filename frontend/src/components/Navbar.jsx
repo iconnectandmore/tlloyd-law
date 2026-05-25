@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { navLinks } from "../mock";
 
@@ -14,7 +15,6 @@ const LaurelLogo = () => (
         <stop offset="100%" stopColor="#5a1414" />
       </linearGradient>
     </defs>
-    {/* Left laurel */}
     <g fill="url(#leafGrad)">
       {[0, 1, 2, 3, 4, 5].map((i) => (
         <ellipse
@@ -27,7 +27,6 @@ const LaurelLogo = () => (
         />
       ))}
     </g>
-    {/* Right laurel */}
     <g fill="url(#leafGrad)">
       {[0, 1, 2, 3, 4, 5].map((i) => (
         <ellipse
@@ -40,7 +39,6 @@ const LaurelLogo = () => (
         />
       ))}
     </g>
-    {/* Center monogram L */}
     <text
       x="60"
       y="68"
@@ -67,52 +65,57 @@ const LaurelLogo = () => (
   </svg>
 );
 
+const NavLinkItem = ({ link, currentPath }) => {
+  const active = currentPath === link.href;
+  return (
+    <Link
+      to={link.href}
+      className={`text-[13px] tracking-[0.15em] font-medium transition-colors duration-200 ${
+        active
+          ? "text-[#c9a96e]"
+          : "text-[#7a1a1a] hover:text-[#c9a96e]"
+      }`}
+    >
+      {link.label}
+    </Link>
+  );
+};
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const location = useLocation();
   const leftLinks = navLinks.slice(0, 4);
   const rightLinks = navLinks.slice(4);
 
   return (
     <nav className="w-full bg-[#ece4d6] relative z-30">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Desktop */}
         <div className="hidden lg:flex items-center justify-between py-2">
           <ul className="flex items-center gap-7 flex-1 justify-end pr-8">
             {leftLinks.map((l) => (
               <li key={l.label}>
-                <a
-                  href={l.href}
-                  className="text-[#7a1a1a] text-[13px] tracking-[0.15em] font-medium hover:text-[#c9a96e] transition-colors duration-200"
-                >
-                  {l.label}
-                </a>
+                <NavLinkItem link={l} currentPath={location.pathname} />
               </li>
             ))}
           </ul>
 
-          <a href="/" className="shrink-0" aria-label="Home">
+          <Link to="/" className="shrink-0" aria-label="Home">
             <LaurelLogo />
-          </a>
+          </Link>
 
           <ul className="flex items-center gap-7 flex-1 pl-8">
             {rightLinks.map((l) => (
               <li key={l.label}>
-                <a
-                  href={l.href}
-                  className="text-[#7a1a1a] text-[13px] tracking-[0.15em] font-medium hover:text-[#c9a96e] transition-colors duration-200"
-                >
-                  {l.label}
-                </a>
+                <NavLinkItem link={l} currentPath={location.pathname} />
               </li>
             ))}
           </ul>
         </div>
 
-        {/* Mobile */}
         <div className="flex lg:hidden items-center justify-between py-2">
-          <a href="/" aria-label="Home">
+          <Link to="/" aria-label="Home">
             <LaurelLogo />
-          </a>
+          </Link>
           <button
             onClick={() => setOpen(!open)}
             className="p-2 text-[#7a1a1a]"
@@ -126,12 +129,13 @@ const Navbar = () => {
           <ul className="lg:hidden pb-4 flex flex-col gap-3 border-t border-[#7a1a1a]/20 pt-4">
             {navLinks.map((l) => (
               <li key={l.label}>
-                <a
-                  href={l.href}
+                <Link
+                  to={l.href}
+                  onClick={() => setOpen(false)}
                   className="block text-[#7a1a1a] text-[13px] tracking-[0.15em] font-medium hover:text-[#c9a96e]"
                 >
                   {l.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
