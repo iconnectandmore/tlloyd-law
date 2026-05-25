@@ -26,7 +26,7 @@ export const attorney = {
   bio: [
     "Tamla, founder and owner of Lloyd Law Firm in Jacksonville, Florida, is a compassionate and dedicated attorney committed to guiding individuals, families, and businesses through complex legal matters with care, creativity, professionalism, and integrity.",
     "With a focus on estate planning and mediation, she provides tailored legal solutions that align with each client's unique needs and goals while upholding the rule of law.",
-    "Passionate about giving back to her community, Tamla actively engages in pro bono work, educational workshops, and volunteer initiatives aimed at expanding access to legal services and promoting dispute resolution. Her dedication reflects her belief in empowering others through thoughtful legal counsel and meaningful community contributions.",
+    "Passionate about giving back to her community, Tamla actively engages in pro bono work, educational workshops, and volunteer initiatives aimed at expanding access to legal services. Her dedication reflects her belief in empowering others through thoughtful legal counsel and meaningful community contributions.",
     "Whether crafting a comprehensive estate plan or facilitating a thoughtful resolution, Tamla prioritizes clear communication, strategic solutions, and long-term client success, ensuring each individual receives the guidance they need with confidence and peace of mind.",
   ],
   mission:
@@ -142,11 +142,11 @@ export const faqs = [
   },
   {
     q: "How does mediation help in resolving conflicts?",
-    a: "Mediation is a voluntary process where a neutral mediator facilitates communication between conflicting parties to help them reach a mutually acceptable agreement. It promotes collaboration, preserves relationships, and allows parties to retain control over the outcome, unlike decisions imposed by a court or arbitrator.",
+    a: "Mediation is a voluntary process where a neutral mediator facilitates communication between conflicting parties to help them reach a mutually acceptable agreement. It promotes open dialogue, preserves relationships, and allows parties to retain control over the outcome, rather than having a decision imposed by a court.",
   },
   {
     q: "What does the consultation process look like?",
-    a: "We begin with an initial consultation to understand your goals, answer your questions, and outline a personalized plan. From there, we draft documents, review them with you, and finalize everything to your satisfaction. Our process is collaborative, transparent, and tailored to your needs.",
+    a: "We begin with an initial consultation to understand your goals, answer your questions, and outline a personalized plan. From there, we draft documents, review them with you, and finalize everything to your satisfaction. Our process is transparent, attentive, and tailored to your needs.",
   },
 ];
 
@@ -235,7 +235,7 @@ export const blogPosts = [
     id: 3,
     title: "Mediation vs. Litigation: Which Is Right for You?",
     excerpt:
-      "Choosing the right path for dispute resolution can save you time, money, and the relationships that matter most.",
+      "Choosing the right path to resolve a conflict can save you time, money, and the relationships that matter most.",
     date: "April 10, 2025",
     category: "Mediation",
     image:
