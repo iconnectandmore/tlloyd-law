@@ -16,6 +16,13 @@ import resend
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
 
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
+
 # MongoDB connection
 mongo_url = os.environ['MONGO_URL']
 client = AsyncIOMotorClient(mongo_url)
@@ -252,7 +259,12 @@ async def submit_contact_form(payload: ContactRequest):
     )
 
     if status == "failed":
-        raise HTTPException(status_code=502, detail="Unable to send email at this time. Please try again or call us directly.")
+        # Submission still stored in DB; surface friendly message but include status
+        return {
+            "status": "failed",
+            "submission_id": submission.id,
+            "message": "We received your message but couldn't deliver the email confirmation. We'll still reach out to you.",
+        }
 
     return {
         "status": status,
@@ -271,13 +283,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-)
-logger = logging.getLogger(__name__)
 
 @app.on_event("shutdown")
 async def shutdown_db_client():
