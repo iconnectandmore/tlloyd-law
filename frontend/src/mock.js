@@ -62,10 +62,158 @@ export const navLinks = [
   { label: "REVIEWS", href: "/reviews" },
   { label: "FAQ", href: "/faq" },
   { label: "CONTACT", href: "/contact" },
-  { label: "PRACTICE AREAS", href: "/practice-areas" },
+  {
+    label: "PRACTICE AREAS",
+    href: "/practice-areas",
+    children: [
+      { label: "Protect Your Family. Preserve Your Legacy.", href: "/practice-areas" },
+      { label: "Why Estate Planning Matters", href: "/why-estate-planning" },
+      { label: "Mediation Services", href: "/mediation-services" },
+    ],
+  },
   { label: "SCHEDULE", href: "/schedule" },
   { label: "BLOG", href: "/blog" },
 ];
+
+export const whyEstatePlanning = {
+  intro:
+    "Estate planning is not only for the wealthy. Without proper planning, families may face unnecessary court involvement, delays, expenses, and uncertainty during already difficult times.",
+  benefitsHeading: "A thoughtfully prepared estate plan can help:",
+  benefits: [
+    "Protect your loved ones",
+    "Avoid or minimize probate",
+    "Plan for incapacity",
+    "Ensure your wishes are honored",
+    "Provide clarity and peace of mind for your family",
+  ],
+  approachHeading: "A Personalized Approach",
+  approachIntro:
+    "At Lloyd Law Firm, we believe estate planning should never feel overwhelming or impersonal. We take the time to understand your goals, explain your options in clear language, and create a plan tailored to your unique needs and circumstances.",
+  approachListHeading: "Our firm is proud to provide:",
+  approach: [
+    "Compassionate and approachable service",
+    "Personalized legal guidance",
+    "Clear communication without unnecessary legal jargon",
+    "Estate planning solutions tailored to Florida law",
+  ],
+  whoHeading: "Who We Help",
+  whoIntro: "Our estate planning services are ideal for:",
+  who: [
+    "Individuals and families",
+    "Parents of minor children",
+    "Homeowners",
+    "Retirees",
+    "Blended families",
+    "Business owners",
+    "Individuals caring for aging parents",
+  ],
+  closing:
+    "Whether you need a simple will or a more comprehensive estate plan, we are here to help you prepare for the future with confidence.",
+};
+
+export const mediationContent = {
+  intro:
+    "At Lloyd Law Firm, P.L.L.C., we believe that disputes don't always need to end in court. Mediation offers a thoughtful, efficient, and cost-effective alternative for resolving conflicts while preserving relationships and fostering understanding. Our experienced mediator is here to help you find common ground and reach agreements that work for everyone involved.",
+  whatHeading: "What Is Mediation?",
+  whatText:
+    "Mediation is a voluntary process where a neutral third-party mediator facilitates discussions between disputing parties to help them resolve their issues amicably. Unlike litigation, the mediator does not impose a decision but works with the parties to craft their own agreement.",
+  whenHeading: "Mediation is commonly used in:",
+  whenItems: [
+    {
+      title: "Family Law",
+      text: "Divorce, child custody, parenting plans, and property division.",
+    },
+    {
+      title: "Business Disputes",
+      text: "Contract disagreements, partnership issues, and workplace conflicts.",
+    },
+    {
+      title: "Civil Matters",
+      text: "Neighbor disputes, landlord-tenant issues, and other civil conflicts.",
+    },
+  ],
+  benefitsHeading: "Benefits of Mediation",
+  benefits: [
+    {
+      title: "Cost-Effective",
+      text: "Avoid costly litigation fees and reduce expenses.",
+    },
+    {
+      title: "Timely Resolutions",
+      text: "Reach agreements faster than traditional court proceedings.",
+    },
+    {
+      title: "Confidentiality",
+      text: "Discussions and outcomes remain private and protected.",
+    },
+    {
+      title: "Preservation of Relationships",
+      text: "Maintain amicable relationships by fostering open communication and understanding.",
+    },
+    {
+      title: "Control Over Outcomes",
+      text: "Parties maintain decision-making power rather than having outcomes imposed by a judge.",
+    },
+  ],
+  whyHeading: "Why Choose Lloyd Law Firm, P.L.L.C.?",
+  why: [
+    {
+      title: "Experienced Mediator",
+      text: "Our mediator is a trained professional with expertise in legal and interpersonal conflict resolution.",
+    },
+    {
+      title: "Customized Approach",
+      text: "We tailor the mediation process to fit the unique needs of your situation.",
+    },
+    {
+      title: "Impartial Guidance",
+      text: "We ensure all parties are heard and work thoughtfully toward a fair resolution.",
+    },
+    {
+      title: "Focus on Solutions",
+      text: "Our goal is to help you move forward with agreements that benefit all parties.",
+    },
+  ],
+  rightHeading: "Is Mediation Right for You?",
+  rightText:
+    "Mediation is a flexible and effective option for resolving disputes when both parties are willing to communicate openly. Whether you're facing a family, business, or civil matter, our team is here to help you navigate the process with skill and empathy.",
+  scheduleHeading: "Schedule Your Mediation Session",
+  scheduleText:
+    "Let Lloyd Law Firm help you resolve your dispute with dignity and efficiency. Contact us today to learn more about our mediation services and how we can assist you in reaching a successful resolution.",
+};
+
+export const legalDisclaimer = {
+  intro:
+    "The information provided on this website is for general informational purposes only and does not constitute legal advice. Viewing or interacting with this website does not create an attorney-client relationship between you and Lloyd Law Firm.",
+  intro2:
+    "While we strive to provide accurate and up-to-date information, laws and regulations frequently change, and the information on this website may not reflect the most current legal developments. You should not act or rely on any information from this website without speaking directly to the attorney regarding your specific situation.",
+  sections: [
+    {
+      title: "Attorney-Client Relationship",
+      text: "Contacting us through this website, email, or other forms of communication does not establish an attorney-client relationship. Confidential or time-sensitive information should not be sent through this website.",
+    },
+    {
+      title: "No Guarantee of Results",
+      text: "Past outcomes or results described on this website are not guarantees of future success. Each legal matter is unique, and outcomes depend on a variety of factors.",
+    },
+    {
+      title: "Third-Party Links",
+      text: "This website may contain links to third-party websites. These links are provided for convenience and informational purposes only. Lloyd Law Firm is not responsible for the content, accuracy, or practices of linked websites.",
+    },
+    {
+      title: "Jurisdiction",
+      text: "The attorney at Lloyd Law Firm is licensed to practice law in the State of Florida. We do not seek to represent anyone in jurisdictions where this website fails to comply with applicable laws and ethical rules.",
+    },
+    {
+      title: "Image Disclaimer",
+      text: "The photos on this website are for illustrative purposes only and do not depict employees, clients, or affiliates of Lloyd Law Firm.",
+    },
+    {
+      title: "Copyright Notice",
+      text: "All content, including text, images, logos, and other materials on this website, is the property of Lloyd Law Firm unless otherwise stated. Unauthorized use or reproduction is strictly prohibited.",
+    },
+  ],
+};
 
 export const practiceAreas = [
   {

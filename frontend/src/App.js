@@ -11,6 +11,9 @@ import FAQPage from "./pages/FAQPage";
 import ContactPage from "./pages/ContactPage";
 import SchedulePage from "./pages/SchedulePage";
 import BlogPage from "./pages/BlogPage";
+import WhyEstatePlanningPage from "./pages/WhyEstatePlanningPage";
+import MediationServicesPage from "./pages/MediationServicesPage";
+import LegalDisclaimerPage from "./pages/LegalDisclaimerPage";
 
 function App() {
   return (
@@ -26,6 +29,9 @@ function App() {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/schedule" element={<SchedulePage />} />
             <Route path="/blog" element={<BlogPage />} />
+            <Route path="/why-estate-planning" element={<WhyEstatePlanningPage />} />
+            <Route path="/mediation-services" element={<MediationServicesPage />} />
+            <Route path="/legal-disclaimer" element={<LegalDisclaimerPage />} />
             <Route path="*" element={<HomePage />} />
           </Routes>
         </Layout>

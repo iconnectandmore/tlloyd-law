@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { navLinks, firmInfo } from "../mock";
 
 const Logo = ({ size = "h-24" }) => (
@@ -16,15 +16,68 @@ const Logo = ({ size = "h-24" }) => (
   </div>
 );
 
-const NavLinkItem = ({ link, currentPath }) => {
-  const active = currentPath === link.href;
+const NavItem = ({ link, currentPath }) => {
+  const [open, setOpen] = useState(false);
+  const active =
+    currentPath === link.href ||
+    (link.children && link.children.some((c) => c.href === currentPath));
+
+  if (link.children) {
+    return (
+      <div
+        className="relative"
+        onMouseEnter={() => setOpen(true)}
+        onMouseLeave={() => setOpen(false)}
+      >
+        <Link
+          to={link.href}
+          className={`inline-flex items-center gap-1 text-[13px] tracking-[0.15em] font-medium transition-colors duration-200 ${
+            active ? "text-[#c9a96e]" : "text-[#7a1a1a] hover:text-[#c9a96e]"
+          }`}
+        >
+          {link.label}
+          <ChevronDown
+            size={14}
+            className={`transition-transform duration-200 ${
+              open ? "rotate-180" : ""
+            }`}
+          />
+        </Link>
+
+        {open && (
+          <div className="absolute left-1/2 -translate-x-1/2 top-full pt-3 z-50">
+            <div className="w-72 bg-[#f3ecdd] border border-[#7a1a1a]/15 shadow-xl py-2">
+              {link.children.map((c) => {
+                const sub = currentPath === c.href;
+                return (
+                  <Link
+                    key={c.label}
+                    to={c.href}
+                    className={`block px-5 py-2.5 text-[13px] leading-tight transition-colors duration-150 ${
+                      sub
+                        ? "bg-[#7a1a1a]/10 text-[#5a1414]"
+                        : "text-[#7a1a1a] hover:bg-[#7a1a1a]/8 hover:text-[#5a1414]"
+                    }`}
+                    style={{
+                      fontFamily: "'Playfair Display', Georgia, serif",
+                    }}
+                  >
+                    {c.label}
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  }
+
   return (
     <Link
       to={link.href}
       className={`text-[13px] tracking-[0.15em] font-medium transition-colors duration-200 ${
-        active
-          ? "text-[#c9a96e]"
-          : "text-[#7a1a1a] hover:text-[#c9a96e]"
+        active ? "text-[#c9a96e]" : "text-[#7a1a1a] hover:text-[#c9a96e]"
       }`}
     >
       {link.label}
@@ -34,6 +87,7 @@ const NavLinkItem = ({ link, currentPath }) => {
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [openSub, setOpenSub] = useState(null);
   const location = useLocation();
   const leftLinks = navLinks.slice(0, 4);
   const rightLinks = navLinks.slice(4);
@@ -45,7 +99,7 @@ const Navbar = () => {
           <ul className="flex items-center gap-7 flex-1 justify-end pr-8">
             {leftLinks.map((l) => (
               <li key={l.label}>
-                <NavLinkItem link={l} currentPath={location.pathname} />
+                <NavItem link={l} currentPath={location.pathname} />
               </li>
             ))}
           </ul>
@@ -57,7 +111,7 @@ const Navbar = () => {
           <ul className="flex items-center gap-7 flex-1 pl-8">
             {rightLinks.map((l) => (
               <li key={l.label}>
-                <NavLinkItem link={l} currentPath={location.pathname} />
+                <NavItem link={l} currentPath={location.pathname} />
               </li>
             ))}
           </ul>
@@ -77,16 +131,52 @@ const Navbar = () => {
         </div>
 
         {open && (
-          <ul className="lg:hidden pb-4 flex flex-col gap-3 border-t border-[#7a1a1a]/20 pt-4">
+          <ul className="lg:hidden pb-4 flex flex-col gap-1 border-t border-[#7a1a1a]/20 pt-3">
             {navLinks.map((l) => (
               <li key={l.label}>
-                <Link
-                  to={l.href}
-                  onClick={() => setOpen(false)}
-                  className="block text-[#7a1a1a] text-[13px] tracking-[0.15em] font-medium hover:text-[#c9a96e]"
-                >
-                  {l.label}
-                </Link>
+                {l.children ? (
+                  <div>
+                    <button
+                      onClick={() =>
+                        setOpenSub(openSub === l.label ? null : l.label)
+                      }
+                      className="w-full flex items-center justify-between py-2 text-[#7a1a1a] text-[13px] tracking-[0.15em] font-medium"
+                    >
+                      {l.label}
+                      <ChevronDown
+                        size={16}
+                        className={`transition-transform ${
+                          openSub === l.label ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
+                    {openSub === l.label && (
+                      <div className="pl-4 pb-2 flex flex-col gap-2">
+                        {l.children.map((c) => (
+                          <Link
+                            key={c.label}
+                            to={c.href}
+                            onClick={() => {
+                              setOpen(false);
+                              setOpenSub(null);
+                            }}
+                            className="text-[#7a1a1a] text-[13px] hover:text-[#c9a96e]"
+                          >
+                            {c.label}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <Link
+                    to={l.href}
+                    onClick={() => setOpen(false)}
+                    className="block py-2 text-[#7a1a1a] text-[13px] tracking-[0.15em] font-medium hover:text-[#c9a96e]"
+                  >
+                    {l.label}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>

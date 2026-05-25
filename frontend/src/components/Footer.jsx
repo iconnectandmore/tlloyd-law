@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Linkedin, Facebook, Instagram } from "lucide-react";
 import { firmInfo } from "../mock";
 
@@ -11,6 +12,7 @@ const footerLinks = [
   { label: "Practice Areas", href: "/practice-areas" },
   { label: "Schedule", href: "/schedule" },
   { label: "Blog", href: "/blog" },
+  { label: "Legal Disclaimer", href: "/legal-disclaimer" },
 ];
 
 const Footer = () => {
@@ -30,13 +32,13 @@ const Footer = () => {
           <ul className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
             {footerLinks.map((l) => (
               <li key={l.label}>
-                <a
-                  href={l.href}
+                <Link
+                  to={l.href}
                   className="text-[14px] tracking-wide hover:text-white transition-colors"
                   style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                 >
                   {l.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
