@@ -1,11 +1,15 @@
 import React, { useState } from "react";
+import axios from "axios";
 import PageHeader from "../components/PageHeader";
 import { firmInfo } from "../mock";
-import { MapPin, Phone, Mail, Clock, Linkedin, Facebook, Instagram, Send } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Linkedin, Facebook, Instagram, Send, Loader2 } from "lucide-react";
 import { useToast } from "../hooks/use-toast";
+
+const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
 const ContactPage = () => {
   const { toast } = useToast();
+  const [submitting, setSubmitting] = useState(false);
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -16,7 +20,7 @@ const ContactPage = () => {
   const onChange = (e) =>
     setForm({ ...form, [e.target.name]: e.target.value });
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
     if (!form.name || !form.email || !form.message) {
       toast({
@@ -25,11 +29,31 @@ const ContactPage = () => {
       });
       return;
     }
-    toast({
-      title: "Message sent",
-      description: "Thank you. We'll be in touch shortly.",
-    });
-    setForm({ name: "", email: "", phone: "", message: "" });
+    setSubmitting(true);
+    try {
+      await axios.post(`${API}/contact`, {
+        name: form.name.trim(),
+        email: form.email.trim(),
+        phone: form.phone.trim() || null,
+        message: form.message.trim(),
+      });
+      toast({
+        title: "Message sent",
+        description:
+          "Thank you. We've received your message and will be in touch shortly. A confirmation email has been sent to you.",
+      });
+      setForm({ name: "", email: "", phone: "", message: "" });
+    } catch (err) {
+      const detail =
+        err?.response?.data?.detail ||
+        "Something went wrong. Please try again or call us directly.";
+      toast({
+        title: "Unable to send",
+        description: detail,
+      });
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -216,10 +240,20 @@ const ContactPage = () => {
               </div>
               <button
                 type="submit"
-                className="inline-flex items-center gap-2 bg-[#7a1a1a] hover:bg-[#5a1414] text-white px-7 py-3 text-[13px] tracking-[0.15em] font-medium transition-colors duration-200 shadow-sm"
+                disabled={submitting}
+                className="inline-flex items-center gap-2 bg-[#7a1a1a] hover:bg-[#5a1414] disabled:bg-[#7a1a1a]/60 disabled:cursor-not-allowed text-white px-7 py-3 text-[13px] tracking-[0.15em] font-medium transition-colors duration-200 shadow-sm"
               >
-                <Send size={16} />
-                SEND MESSAGE
+                {submitting ? (
+                  <>
+                    <Loader2 size={16} className="animate-spin" />
+                    SENDING...
+                  </>
+                ) : (
+                  <>
+                    <Send size={16} />
+                    SEND MESSAGE
+                  </>
+                )}
               </button>
             </form>
           </div>
