@@ -25,9 +25,9 @@ export const attorney = {
     "https://media.clicksites.ai/clicksites/uploads/1462/1735686775046_headshot.jpg",
   bio: [
     "Tamla, founder and owner of Lloyd Law Firm in Jacksonville, Florida, is a compassionate and dedicated attorney committed to guiding individuals, families, and businesses through complex legal matters with care, creativity, professionalism, and integrity.",
-    "With a focus on estate planning, collaborative law, arbitration, and mediation, she provides tailored legal solutions that align with each client's unique needs and goals while upholding the rule of law.",
+    "With a focus on estate planning and mediation, she provides tailored legal solutions that align with each client's unique needs and goals while upholding the rule of law.",
     "Passionate about giving back to her community, Tamla actively engages in pro bono work, educational workshops, and volunteer initiatives aimed at expanding access to legal services and promoting dispute resolution. Her dedication reflects her belief in empowering others through thoughtful legal counsel and meaningful community contributions.",
-    "Whether crafting a comprehensive estate plan or facilitating a collaborative resolution, Tamla prioritizes clear communication, strategic solutions, and long-term client success, ensuring each individual receives the guidance they need with confidence and peace of mind.",
+    "Whether crafting a comprehensive estate plan or facilitating a thoughtful resolution, Tamla prioritizes clear communication, strategic solutions, and long-term client success, ensuring each individual receives the guidance they need with confidence and peace of mind.",
   ],
   mission:
     "At Lloyd Law Firm, our mission is to provide all clients with compassionate and professional legal services that bring clarity, security, and peace of mind. We are dedicated to building meaningful relationships through personalized guidance tailored to each client's unique needs and goals. Rooted in our commitment to community involvement, we strive to make a lasting, positive impact by helping and advocating for our clients with care and confidence.",
@@ -35,14 +35,6 @@ export const attorney = {
     {
       title: "Estate Planning",
       text: "Tamla works closely with clients to develop personalized plans that protect their assets, minimize tax liabilities, and ensure their legacies are preserved. Whether drafting wills, creating powers of attorney, or guiding business succession planning, Tamla brings clarity and peace of mind to the estate planning process.",
-    },
-    {
-      title: "Collaborative Law",
-      text: "As a collaborative law attorney, Tamla can help clients resolve family law disputes through respectful, non-adversarial negotiations, promoting amicable solutions that preserve relationships.",
-    },
-    {
-      title: "Arbitration",
-      text: "Serving as a FINRA neutral arbitrator or advocate in arbitration proceedings, Tamla leverages extensive experience to efficiently resolve disputes while maintaining fairness and professionalism.",
     },
     {
       title: "Mediation",
@@ -54,7 +46,6 @@ export const attorney = {
     "Master of Business Administration, University of Phoenix",
     "Bachelor of Business Administration, University of North Florida",
     "Florida Supreme Court Certified Family Mediator",
-    "FINRA Arbitrator",
   ],
   memberships: [
     "Florida Bar Association",
