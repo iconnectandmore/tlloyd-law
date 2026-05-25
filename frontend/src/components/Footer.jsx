@@ -44,21 +44,27 @@ const Footer = () => {
           </ul>
           <div className="flex items-center justify-center gap-5 mt-5">
             <a
-              href="https://www.linkedin.com/"
+              href={firmInfo.social.linkedin}
+              target="_blank"
+              rel="noreferrer"
               aria-label="LinkedIn"
               className="hover:text-white transition-colors"
             >
               <Linkedin size={18} />
             </a>
             <a
-              href="https://www.facebook.com/"
+              href={firmInfo.social.facebook}
+              target="_blank"
+              rel="noreferrer"
               aria-label="Facebook"
               className="hover:text-white transition-colors"
             >
               <Facebook size={18} />
             </a>
             <a
-              href="https://www.instagram.com/"
+              href={firmInfo.social.instagram}
+              target="_blank"
+              rel="noreferrer"
               aria-label="Instagram"
               className="hover:text-white transition-colors"
             >
