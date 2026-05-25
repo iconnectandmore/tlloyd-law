@@ -18,6 +18,15 @@ const Footer = () => {
     <footer>
       <div className="bg-[#5a1414] text-[#f3e8d3]">
         <div className="max-w-7xl mx-auto px-6 py-7">
+          <div className="flex justify-center mb-5">
+            <div className="h-20 w-20 rounded-md overflow-hidden bg-black shadow-md">
+              <img
+                src={firmInfo.logo}
+                alt="Lloyd Law Firm, PLLC"
+                className="h-full w-full object-contain p-1"
+              />
+            </div>
+          </div>
           <ul className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
             {footerLinks.map((l) => (
               <li key={l.label}>

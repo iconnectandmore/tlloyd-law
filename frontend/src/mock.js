@@ -16,6 +16,7 @@ export const firmInfo = {
     instagram: "https://www.instagram.com/_llf.pllc",
   },
   scheduleUrl: "https://tidycal.com/tamla",
+  logo: "https://customer-assets.emergentagent.com/job_lloyd-law-preview/artifacts/kw1s0soj_ChatGPT%20Image%20May%2025%2C%202026%2C%2011_01_17%20AM.png",
 };
 
 export const attorney = {

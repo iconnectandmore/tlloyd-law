@@ -1,68 +1,19 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import { navLinks } from "../mock";
+import { navLinks, firmInfo } from "../mock";
 
-const LaurelLogo = () => (
-  <svg
-    viewBox="0 0 120 120"
-    className="w-[88px] h-[88px] drop-shadow-sm"
-    aria-label="Lloyd Law Firm Logo"
+const Logo = ({ size = "h-24" }) => (
+  <div
+    className={`${size} flex items-center justify-center rounded-md overflow-hidden bg-black shadow-md`}
+    style={{ aspectRatio: "1 / 1" }}
   >
-    <defs>
-      <linearGradient id="leafGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop offset="0%" stopColor="#8a1f24" />
-        <stop offset="100%" stopColor="#5a1414" />
-      </linearGradient>
-    </defs>
-    <g fill="url(#leafGrad)">
-      {[0, 1, 2, 3, 4, 5].map((i) => (
-        <ellipse
-          key={`l${i}`}
-          cx={26 - i * 1.5}
-          cy={80 - i * 11}
-          rx="6"
-          ry="11"
-          transform={`rotate(${-25 + i * 5} ${26 - i * 1.5} ${80 - i * 11})`}
-        />
-      ))}
-    </g>
-    <g fill="url(#leafGrad)">
-      {[0, 1, 2, 3, 4, 5].map((i) => (
-        <ellipse
-          key={`r${i}`}
-          cx={94 + i * 1.5}
-          cy={80 - i * 11}
-          rx="6"
-          ry="11"
-          transform={`rotate(${25 - i * 5} ${94 + i * 1.5} ${80 - i * 11})`}
-        />
-      ))}
-    </g>
-    <text
-      x="60"
-      y="68"
-      textAnchor="middle"
-      fontFamily="Playfair Display, Georgia, serif"
-      fontSize="54"
-      fontStyle="italic"
-      fontWeight="600"
-      fill="#7a1a1a"
-    >
-      L
-    </text>
-    <text
-      x="60"
-      y="92"
-      textAnchor="middle"
-      fontFamily="Inter, sans-serif"
-      fontSize="8.5"
-      letterSpacing="2.5"
-      fill="#7a1a1a"
-    >
-      LAW FIRM
-    </text>
-  </svg>
+    <img
+      src={firmInfo.logo}
+      alt="Lloyd Law Firm, PLLC"
+      className="h-full w-full object-contain p-1"
+    />
+  </div>
 );
 
 const NavLinkItem = ({ link, currentPath }) => {
@@ -90,7 +41,7 @@ const Navbar = () => {
   return (
     <nav className="w-full bg-[#ece4d6] relative z-30">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="hidden lg:flex items-center justify-between py-2">
+        <div className="hidden lg:flex items-center justify-between py-3">
           <ul className="flex items-center gap-7 flex-1 justify-end pr-8">
             {leftLinks.map((l) => (
               <li key={l.label}>
@@ -100,7 +51,7 @@ const Navbar = () => {
           </ul>
 
           <Link to="/" className="shrink-0" aria-label="Home">
-            <LaurelLogo />
+            <Logo size="h-24" />
           </Link>
 
           <ul className="flex items-center gap-7 flex-1 pl-8">
@@ -114,7 +65,7 @@ const Navbar = () => {
 
         <div className="flex lg:hidden items-center justify-between py-2">
           <Link to="/" aria-label="Home">
-            <LaurelLogo />
+            <Logo size="h-14" />
           </Link>
           <button
             onClick={() => setOpen(!open)}
