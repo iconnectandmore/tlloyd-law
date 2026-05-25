@@ -182,6 +182,100 @@ export const mediationContent = {
     "Let Lloyd Law Firm help you resolve your dispute with dignity and efficiency. Contact us today to learn more about our mediation services and how we can assist you in reaching a successful resolution.",
 };
 
+export const privacyPolicy = {
+  lastUpdated: "May 25, 2025",
+  intro:
+    "Lloyd Law Firm, P.L.L.C. (\"Lloyd Law Firm,\" \"we,\" \"us,\" or \"our\") respects your privacy and is committed to protecting the personal information you share with us. This Privacy Policy describes the types of information we may collect through our website at tlloydlaw.com (the \"Site\") and any related services, how we use that information, who we may share it with, and the choices you have regarding our use of your information.",
+  topics: [
+    "Information We Collect",
+    "How We Use Your Information",
+    "How We Share Your Information",
+    "Cookies and Online Tracking",
+    "Your Choices",
+    "Information Security",
+    "Third-Party Links",
+    "Children's Privacy",
+    "Changes to This Privacy Policy",
+    "Contact Us",
+  ],
+  sections: [
+    {
+      title: "Information We Collect",
+      blocks: [
+        {
+          subtitle: "Information You Provide",
+          text: "We collect information you voluntarily provide to us when you contact the firm, request a consultation, send an email, complete a form on our Site, or otherwise communicate with us. This may include your name, email address, phone number, mailing address, and any details you share about your legal matter.",
+        },
+        {
+          subtitle: "Information Collected Automatically",
+          text: "When you visit our Site, we and our service providers may automatically collect certain technical information, such as your IP address, browser type, device information, pages visited, time spent on each page, referring website, and approximate location. This information helps us understand how visitors use the Site and improve their experience.",
+        },
+        {
+          subtitle: "Information from Third Parties",
+          text: "We may receive information about you from public records, referral sources, or other third parties involved in your legal matter, but only as appropriate to the services we provide.",
+        },
+      ],
+    },
+    {
+      title: "How We Use Your Information",
+      text: "We use the information we collect to:",
+      list: [
+        "Respond to your inquiries and schedule consultations",
+        "Provide and manage legal services to our clients",
+        "Communicate with you about your case or our services",
+        "Operate, maintain, and improve our Site",
+        "Comply with applicable laws and our professional obligations",
+        "Detect, prevent, or address fraud, abuse, or security issues",
+      ],
+    },
+    {
+      title: "How We Share Your Information",
+      text: "We do not sell your personal information. We may share it only in limited circumstances, including:",
+      list: [
+        "With trusted service providers who help us operate the Site or our practice (such as IT, hosting, email, or scheduling providers), under appropriate confidentiality obligations",
+        "With co-counsel, opposing counsel, courts, mediators, or other parties when reasonably necessary to represent you or carry out the services you have requested",
+        "When required by law, subpoena, court order, or other legal process",
+        "To protect the rights, property, or safety of Lloyd Law Firm, our clients, or others",
+        "With your consent or at your direction",
+      ],
+    },
+    {
+      title: "Cookies and Online Tracking",
+      text: "Our Site may use cookies and similar technologies to remember your preferences, analyze Site usage, and improve performance. You can typically control cookies through your browser settings. Disabling cookies may affect the functionality of certain features of the Site.",
+    },
+    {
+      title: "Your Choices",
+      text: "You may:",
+      list: [
+        "Choose not to provide certain information, though this may limit our ability to respond to you",
+        "Unsubscribe from any marketing emails by following the instructions in the email",
+        "Contact us to request access to, correction of, or deletion of personal information we hold about you, subject to our legal and ethical obligations as attorneys",
+      ],
+    },
+    {
+      title: "Information Security",
+      text: "We use reasonable administrative, technical, and physical safeguards to help protect personal information from unauthorized access, disclosure, alteration, or destruction. However, no method of transmission over the Internet or electronic storage is completely secure, and we cannot guarantee absolute security. Do not transmit sensitive or confidential information to us through this Site.",
+    },
+    {
+      title: "Third-Party Links",
+      text: "Our Site may contain links to third-party websites for your convenience. We are not responsible for the privacy practices or content of those sites. We encourage you to review the privacy policy of any website you visit.",
+    },
+    {
+      title: "Children's Privacy",
+      text: "Our Site is not directed to children under the age of 18, and we do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us so we can take appropriate action.",
+    },
+    {
+      title: "Changes to This Privacy Policy",
+      text: "We may update this Privacy Policy from time to time to reflect changes in our practices or applicable law. When we do, we will revise the \"Last Updated\" date below. Your continued use of the Site after any changes constitutes your acceptance of the updated Privacy Policy.",
+    },
+    {
+      title: "Contact Us",
+      text: "If you have questions or concerns about this Privacy Policy or how we handle your personal information, please contact us at:",
+      contact: true,
+    },
+  ],
+};
+
 export const legalDisclaimer = {
   intro:
     "The information provided on this website is for general informational purposes only and does not constitute legal advice. Viewing or interacting with this website does not create an attorney-client relationship between you and Lloyd Law Firm.",

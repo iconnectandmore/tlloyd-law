@@ -90,12 +90,12 @@ const Footer = () => {
           This information is not intended to create an attorney-client
           relationship.
         </p>
-        <a
-          href="/privacy"
+        <Link
+          to="/privacy-policy"
           className="text-[#7a1a1a] text-[13px] mt-2 inline-block hover:underline"
         >
           Privacy Policy
-        </a>
+        </Link>
         <p
           className="text-[#6b5e58] text-[12px] mt-4"
           style={{ fontFamily: "'Lato', sans-serif" }}

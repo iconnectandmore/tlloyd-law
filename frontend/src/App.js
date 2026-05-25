@@ -14,6 +14,7 @@ import BlogPage from "./pages/BlogPage";
 import WhyEstatePlanningPage from "./pages/WhyEstatePlanningPage";
 import MediationServicesPage from "./pages/MediationServicesPage";
 import LegalDisclaimerPage from "./pages/LegalDisclaimerPage";
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 
 function App() {
   return (
@@ -32,6 +33,8 @@ function App() {
             <Route path="/why-estate-planning" element={<WhyEstatePlanningPage />} />
             <Route path="/mediation-services" element={<MediationServicesPage />} />
             <Route path="/legal-disclaimer" element={<LegalDisclaimerPage />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+            <Route path="/privacy" element={<PrivacyPolicyPage />} />
             <Route path="*" element={<HomePage />} />
           </Routes>
         </Layout>
