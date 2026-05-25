@@ -32,22 +32,6 @@ export const practiceAreas = [
     cta: "Estate Planning",
   },
   {
-    id: "collaborative-law",
-    title: "Collaborative Law",
-    icon: "Users",
-    question:
-      "Do you need a respectful, non-adversarial approach to resolving a dispute?",
-    cta: "Collaborative Law",
-  },
-  {
-    id: "arbitration",
-    title: "Arbitration",
-    icon: "Scale",
-    question:
-      "Looking for an efficient, impartial path to resolution outside of court?",
-    cta: "Arbitration",
-  },
-  {
     id: "mediation",
     title: "Mediation",
     icon: "Handshake",
@@ -130,4 +114,4 @@ export const skylineImage =
   "https://images.unsplash.com/photo-1683552424939-dfc29064d449?w=1920&auto=format&fit=crop&q=70";
 
 export const welcomeCopy =
-  "We pride ourselves on providing excellent service and legal representation. Our goal is to serve our clients with professionalism, compassion, and competence. If you need assistance with estate planning, mediation, arbitration, or collaborative law, you can trust the Lloyd Law Firm to guide you with care.";
+  "We pride ourselves on providing excellent service and legal representation. Our goal is to serve our clients with professionalism, compassion, and competence. If you need assistance with estate planning, mediation, or probate, you can trust the Lloyd Law Firm to guide you with care.";
