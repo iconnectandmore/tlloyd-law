@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
+import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 import { testimonials } from "../mock";
 
@@ -94,12 +95,12 @@ const Testimonials = () => {
         </div>
 
         <div className="flex justify-center mt-12">
-          <a
-            href="#practice-areas"
+          <Link
+            to="/practice-areas"
             className="bg-[#7a1a1a] hover:bg-[#5a1414] text-white px-8 py-3.5 text-[14px] tracking-wide font-medium transition-colors duration-200 shadow-sm"
           >
             learn more about our practice areas
-          </a>
+          </Link>
         </div>
       </div>
     </section>

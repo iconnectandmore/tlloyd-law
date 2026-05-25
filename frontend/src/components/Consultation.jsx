@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { firmInfo } from "../mock";
 
 const Badge = ({ letters, label, color }) => (
@@ -61,12 +62,12 @@ const Consultation = () => {
             </p>
           </div>
 
-          <a
-            href="#schedule"
+          <Link
+            to="/schedule"
             className="inline-block mt-8 bg-[#7a1a1a] hover:bg-[#5a1414] text-white px-7 py-3 text-[13px] tracking-[0.15em] font-medium transition-colors duration-200 shadow-sm"
           >
             SCHEDULE A CONSULTATION
-          </a>
+          </Link>
         </div>
       </div>
     </section>

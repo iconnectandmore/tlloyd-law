@@ -50,12 +50,12 @@ const BlogPage = () => {
                   >
                     {post.excerpt}
                   </p>
-                  <a
-                    href="#read"
+                  <button
+                    type="button"
                     className="inline-flex items-center gap-2 mt-5 text-[#7a1a1a] hover:text-[#5a1414] text-[13px] font-semibold tracking-wide transition-colors"
                   >
                     READ ARTICLE <ArrowRight size={14} />
-                  </a>
+                  </button>
                 </div>
               </article>
             ))}

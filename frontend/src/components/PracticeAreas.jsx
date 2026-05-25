@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   Landmark,
   Users,
@@ -18,6 +19,13 @@ const iconMap = {
   Contact: ContactIcon,
 };
 
+const routeMap = {
+  "estate-planning": "/practice-areas",
+  mediation: "/mediation-services",
+  probate: "/practice-areas",
+  contact: "/contact",
+};
+
 const PracticeAreaCard = ({ area }) => {
   const Icon = iconMap[area.icon] || Landmark;
   return (
@@ -34,13 +42,13 @@ const PracticeAreaCard = ({ area }) => {
       >
         {area.question}
       </p>
-      <a
-        href={`#${area.id}`}
+      <Link
+        to={routeMap[area.id] || "/practice-areas"}
         className="inline-flex items-center gap-2.5 self-start bg-[#7a1a1a] hover:bg-[#5a1414] text-white px-6 py-3 text-[14px] tracking-wide font-medium transition-colors duration-200 shadow-sm"
       >
         <Icon size={18} strokeWidth={2} />
         <span>{area.cta}</span>
-      </a>
+      </Link>
     </div>
   );
 };
