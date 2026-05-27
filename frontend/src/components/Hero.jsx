@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-[#dde4ec]/85 via-[#e6ecf3]/75 to-[#cbd5e1]/85" />
       <div className="absolute inset-0 bg-[#1e5fa3]/10" />
 
-      <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center min-h-[520px] md:min-h-[620px]">
+      <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-start min-h-[520px] md:min-h-[620px] pt-12 md:pt-16">
         {/* Attorney portrait */}
         <div className="relative flex justify-center md:justify-end">
           <img
