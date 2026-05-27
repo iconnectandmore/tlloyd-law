@@ -311,7 +311,7 @@ export const practiceAreas = [
     title: "Estate Planning",
     icon: "Landmark",
     question:
-      "Are you in need of a will, durable power of attorney, advance directives or a Lady Bird Deed?",
+      "Are you in need of a will, durable power of attorney, advance directives or a lady bird deed?",
     cta: "Estate Planning",
   },
   {
