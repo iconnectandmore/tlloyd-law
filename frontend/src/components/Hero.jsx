@@ -15,13 +15,17 @@ const Hero = () => {
       <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-start min-h-[520px] md:min-h-[620px]">
         {/* Attorney portrait */}
         <div className="relative flex justify-center md:justify-end pt-6">
-          <div className="relative rounded-lg overflow-hidden shadow-[0_10px_25px_rgba(14,64,112,0.25)]">
-            <img
-              src={heroImage}
-              alt="Attorney consultation at Lloyd Law Firm"
-              className="max-h-[160px] md:max-h-[180px] w-auto object-cover"
-            />
-          </div>
+          <img
+            src={heroImage}
+            alt="Attorney Tamla Lloyd"
+            className="max-h-[260px] md:max-h-[300px] w-auto object-cover"
+            style={{
+              maskImage:
+                "radial-gradient(ellipse 60% 65% at 50% 45%, black 35%, rgba(0,0,0,0.55) 70%, transparent 95%)",
+              WebkitMaskImage:
+                "radial-gradient(ellipse 60% 65% at 50% 45%, black 35%, rgba(0,0,0,0.55) 70%, transparent 95%)",
+            }}
+          />
         </div>
 
         {/* Welcome text */}
