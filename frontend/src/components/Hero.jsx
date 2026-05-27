@@ -9,7 +9,7 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${skylineImage})` }}
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#b9a8a3]/85 via-[#c2b1a6]/75 to-[#b9a8a3]/85" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#dde4ec]/85 via-[#e6ecf3]/75 to-[#cbd5e1]/85" />
       <div className="absolute inset-0 bg-[#1e5fa3]/10" />
 
       <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-end md:items-center min-h-[520px] md:min-h-[620px]">
