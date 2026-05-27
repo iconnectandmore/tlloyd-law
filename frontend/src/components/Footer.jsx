@@ -9,7 +9,7 @@ const footerLinks = [
   { label: "Reviews", href: "/reviews" },
   { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact" },
-  { label: "Practice Areas", href: "/practice-areas" },
+  { label: "Estate Planning", href: "/practice-areas" },
   { label: "Schedule", href: "/schedule" },
   { label: "Blog", href: "/blog" },
   { label: "Legal Disclaimer", href: "/legal-disclaimer" },

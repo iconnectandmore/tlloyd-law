@@ -60,7 +60,7 @@ export const navLinks = [
   { label: "FAQ", href: "/faq" },
   { label: "CONTACT", href: "/contact" },
   {
-    label: "PRACTICE AREAS",
+    label: "ESTATE PLANNING",
     href: "/practice-areas",
     children: [
       { label: "Protect Your Family. Preserve Your Legacy.", href: "/practice-areas" },
