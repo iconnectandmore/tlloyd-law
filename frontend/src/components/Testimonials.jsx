@@ -61,7 +61,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="w-full bg-gradient-to-b from-[#f0e8db] to-[#e0d8cb] py-20">
+    <section className="w-full bg-gradient-to-b from-[#dde4ec] via-[#e6ecf3] to-[#cbd5e1] py-20">
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between mb-8">
           <h2
@@ -74,14 +74,14 @@ const Testimonials = () => {
             <button
               onClick={prev}
               aria-label="Previous"
-              className="w-9 h-9 rounded-full bg-[#1f2937] hover:bg-[#1e5fa3] text-white flex items-center justify-center transition-colors duration-200"
+              className="w-9 h-9 rounded-full bg-[#1e5fa3] hover:bg-[#0e4070] text-white flex items-center justify-center transition-colors duration-200"
             >
               <ChevronLeft size={20} />
             </button>
             <button
               onClick={next}
               aria-label="Next"
-              className="w-9 h-9 rounded-full bg-[#1f2937] hover:bg-[#1e5fa3] text-white flex items-center justify-center transition-colors duration-200"
+              className="w-9 h-9 rounded-full bg-[#1e5fa3] hover:bg-[#0e4070] text-white flex items-center justify-center transition-colors duration-200"
             >
               <ChevronRight size={20} />
             </button>
