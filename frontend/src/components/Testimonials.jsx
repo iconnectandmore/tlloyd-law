@@ -99,7 +99,7 @@ const Testimonials = () => {
             to="/practice-areas"
             className="bg-[#1e5fa3] hover:bg-[#0e4070] text-white px-8 py-3.5 text-[14px] tracking-wide font-medium transition-colors duration-200 shadow-sm"
           >
-            learn more about our practice areas
+            learn more about our services
           </Link>
         </div>
       </div>

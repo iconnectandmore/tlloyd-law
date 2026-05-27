@@ -8,8 +8,6 @@ import {
   Heart,
   FileText,
   Home as HomeIcon,
-  Handshake,
-  Landmark,
 } from "lucide-react";
 
 const serviceIcons = [ScrollText, Shield, Heart, FileText, HomeIcon];
@@ -94,62 +92,6 @@ const PracticeAreasPage = () => {
                 </div>
               );
             })}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-gradient-to-b from-[#dde4ec] to-[#e6ecf3] py-16 md:py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2
-            className="text-[#1e5fa3] text-[32px] md:text-[40px] mb-12 text-center"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-          >
-            Additional Services
-          </h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-[#f3f6fa]/80 border border-white/60 p-8 flex gap-5">
-              <div className="shrink-0 w-12 h-12 rounded-full bg-[#1e5fa3] text-white flex items-center justify-center">
-                <Handshake size={22} strokeWidth={2} />
-              </div>
-              <div>
-                <h3
-                  className="text-[#1e5fa3] text-[22px] mb-2"
-                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-                >
-                  Mediation
-                </h3>
-                <p
-                  className="text-[#1f2937] text-[15px] leading-[1.8]"
-                  style={{ fontFamily: "'Lato', sans-serif" }}
-                >
-                  Through mediation, we provide a safe space for parties to
-                  discuss their differences openly. Our trained mediators guide
-                  conversations towards resolution, transforming conflict into
-                  collaboration for a constructive future.
-                </p>
-              </div>
-            </div>
-            <div className="bg-[#f3f6fa]/80 border border-white/60 p-8 flex gap-5">
-              <div className="shrink-0 w-12 h-12 rounded-full bg-[#1e5fa3] text-white flex items-center justify-center">
-                <Landmark size={22} strokeWidth={2} />
-              </div>
-              <div>
-                <h3
-                  className="text-[#1e5fa3] text-[22px] mb-2"
-                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-                >
-                  Probate
-                </h3>
-                <p
-                  className="text-[#1f2937] text-[15px] leading-[1.8]"
-                  style={{ fontFamily: "'Lato', sans-serif" }}
-                >
-                  We guide families through the probate process with care,
-                  helping you administer estates, navigate court requirements,
-                  and resolve issues so loved ones can move forward.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>

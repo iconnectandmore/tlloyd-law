@@ -25,21 +25,17 @@ export const attorney = {
   headshot:
     "https://media.clicksites.ai/clicksites/uploads/1462/1735686775046_headshot.jpg",
   bio: [
-    "Tamla, founder and owner of Lloyd Law Firm in Jacksonville, Florida, is a compassionate and dedicated attorney committed to guiding individuals, families, and businesses through complex legal matters with care, creativity, professionalism, and integrity.",
-    "With a focus on estate planning and mediation, she provides tailored legal solutions that align with each client's unique needs and goals while upholding the rule of law.",
+    "Tamla, founder and owner of Lloyd Law Firm in Jacksonville, Florida, is a compassionate and dedicated Attorney committed to guiding individuals, families, and businesses through complex legal matters with care, creativity, professionalism, and integrity.",
+    "With a focus on estate planning, she provides tailored legal solutions that align with each client's unique needs and goals while upholding the rule of law.",
     "Passionate about giving back to her community, Tamla actively engages in pro bono work, educational workshops, and volunteer initiatives aimed at expanding access to legal services. Her dedication reflects her belief in empowering others through thoughtful legal counsel and meaningful community contributions.",
-    "Whether crafting a comprehensive estate plan or facilitating a thoughtful resolution, Tamla prioritizes clear communication, strategic solutions, and long-term client success, ensuring each individual receives the guidance they need with confidence and peace of mind.",
+    "Whether crafting a comprehensive estate plan or guiding clients through important life decisions, Tamla prioritizes clear communication, strategic solutions, and long-term client success, ensuring each individual receives the guidance they need with confidence and peace of mind.",
   ],
   mission:
     "At Lloyd Law Firm, our mission is to provide all clients with compassionate and professional legal services that bring clarity, security, and peace of mind. We are dedicated to building meaningful relationships through personalized guidance tailored to each client's unique needs and goals. Rooted in our commitment to community involvement, we strive to make a lasting, positive impact by helping and advocating for our clients with care and confidence.",
   expertise: [
     {
       title: "Estate Planning",
-      text: "Tamla works closely with clients to develop personalized plans that protect their assets, minimize tax liabilities, and ensure their legacies are preserved. Whether drafting wills, creating powers of attorney, or guiding business succession planning, Tamla brings clarity and peace of mind to the estate planning process.",
-    },
-    {
-      title: "Mediation",
-      text: "With a compassionate and solution-oriented approach, Tamla guides parties through mediation to achieve mutually beneficial outcomes in family, business, and civil matters.",
+      text: "Our Attorney works closely with clients to develop personalized plans that protect their assets, minimize tax liabilities, and ensure their legacies are preserved. Whether drafting wills, creating powers of attorney, or guiding business succession planning, Attorney Lloyd brings clarity and peace of mind to the estate planning process.",
     },
   ],
   education: [
@@ -68,7 +64,6 @@ export const navLinks = [
     children: [
       { label: "Protect Your Family. Preserve Your Legacy.", href: "/practice-areas" },
       { label: "Why Estate Planning Matters", href: "/why-estate-planning" },
-      { label: "Mediation Services", href: "/mediation-services" },
     ],
   },
   { label: "SCHEDULE", href: "/schedule" },
@@ -319,22 +314,6 @@ export const practiceAreas = [
     cta: "Estate Planning",
   },
   {
-    id: "mediation",
-    title: "Mediation",
-    icon: "Handshake",
-    question:
-      "Would you like a trained mediator to guide you toward common ground?",
-    cta: "Mediation",
-  },
-  {
-    id: "probate",
-    title: "Probate",
-    icon: "Heart",
-    question:
-      "Are you coping with the passing of a loved one while attempting to sort through his or her estate?",
-    cta: "Probate",
-  },
-  {
     id: "contact",
     title: "Contact Us",
     icon: "Contact",
@@ -382,10 +361,6 @@ export const faqs = [
   {
     q: "Why is estate planning important, and what are its key benefits?",
     a: "Estate planning ensures that your assets are distributed according to your wishes, reduces potential tax burdens, and protects your loved ones from unnecessary legal complications. It also allows you to establish guardianship for minor children, designate beneficiaries, and create living wills or trusts to safeguard your legacy.",
-  },
-  {
-    q: "How does mediation help in resolving conflicts?",
-    a: "Mediation is a voluntary process where a neutral mediator facilitates communication between conflicting parties to help them reach a mutually acceptable agreement. It promotes open dialogue, preserves relationships, and allows parties to retain control over the outcome, rather than having a decision imposed by a court.",
   },
   {
     q: "What does the consultation process look like?",
@@ -451,7 +426,7 @@ export const skylineImage =
   "https://images.unsplash.com/photo-1683552424939-dfc29064d449?w=1920&auto=format&fit=crop&q=70";
 
 export const welcomeCopy =
-  "We pride ourselves on providing excellent service and legal representation. Our goal is to serve our clients with professionalism, compassion, and competence. If you need assistance with estate planning, mediation, or probate, you can trust the Lloyd Law Firm to guide you with care.";
+  "We pride ourselves on providing excellent service and legal representation. Our goal is to serve our clients with professionalism, compassion, and competence. If you need assistance with estate planning, you can trust the Lloyd Law Firm to guide you with care.";
 
 export const blogPosts = [
   {
@@ -473,15 +448,5 @@ export const blogPosts = [
     category: "Estate Planning",
     image:
       "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&auto=format&fit=crop&q=70",
-  },
-  {
-    id: 3,
-    title: "Mediation vs. Litigation: Which Is Right for You?",
-    excerpt:
-      "Choosing the right path to resolve a conflict can save you time, money, and the relationships that matter most.",
-    date: "April 10, 2025",
-    category: "Mediation",
-    image:
-      "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&auto=format&fit=crop&q=70",
   },
 ];

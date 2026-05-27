@@ -21,11 +21,12 @@ const Footer = () => {
       <div className="bg-[#0e4070] text-[#e8edf4]">
         <div className="max-w-7xl mx-auto px-6 py-7">
           <div className="flex justify-center mb-5">
-            <div className="h-20 w-20 rounded-md overflow-hidden bg-black shadow-md">
+            <div className="h-20 w-20 rounded-md overflow-hidden bg-[#0e4070] shadow-sm">
               <img
                 src={firmInfo.logo}
                 alt="Lloyd Law Firm, PLLC"
                 className="h-full w-full object-contain p-1"
+                style={{ mixBlendMode: "screen" }}
               />
             </div>
           </div>

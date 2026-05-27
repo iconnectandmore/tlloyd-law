@@ -5,13 +5,14 @@ import { navLinks, firmInfo } from "../mock";
 
 const Logo = ({ size = "h-24" }) => (
   <div
-    className={`${size} flex items-center justify-center rounded-md overflow-hidden bg-black shadow-md`}
+    className={`${size} flex items-center justify-center rounded-md overflow-hidden bg-[#0e4070] shadow-sm`}
     style={{ aspectRatio: "1 / 1" }}
   >
     <img
       src={firmInfo.logo}
       alt="Lloyd Law Firm, PLLC"
       className="h-full w-full object-contain p-1"
+      style={{ mixBlendMode: "screen" }}
     />
   </div>
 );

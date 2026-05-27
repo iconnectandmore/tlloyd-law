@@ -109,7 +109,7 @@ const SchedulePage = () => {
                 </div>
                 <div>
                   <h4 className="text-[#1f2937] font-bold text-[15px]">
-                    Meet with Attorney Lloyd
+                    Private Meeting with Attorney
                   </h4>
                   <p
                     className="text-[#1f2937] text-[14px] leading-[1.7] mt-1"

@@ -9,7 +9,7 @@ const BlogPage = () => {
     <>
       <PageHeader
         title="Insights &amp; Articles"
-        subtitle="Guidance on estate planning, mediation, and the matters that protect your future"
+        subtitle="Guidance on estate planning and the matters that protect your future"
       />
 
       <section className="bg-gradient-to-b from-[#e6ecf3] to-[#dde4ec] py-16 md:py-20">

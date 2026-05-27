@@ -9,7 +9,7 @@ const AboutPage = () => {
     <>
       <PageHeader
         title="About Us"
-        subtitle="Meet the attorney behind Lloyd Law Firm"
+        subtitle="Meet the Attorney behind Lloyd Law Firm"
       />
 
       <section className="bg-gradient-to-b from-[#e6ecf3] to-[#dde4ec] py-16 md:py-20">
@@ -73,9 +73,9 @@ const AboutPage = () => {
             className="text-[#1e5fa3] text-[34px] md:text-[42px] mb-10 text-center"
             style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
-            Areas of Expertise
+            Practice Area
           </h2>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-1 max-w-2xl mx-auto gap-6">
             {attorney.expertise.map((e) => (
               <div
                 key={e.title}
