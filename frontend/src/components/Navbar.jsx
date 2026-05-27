@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { navLinks, firmInfo } from "../mock";
 
-const Logo = ({ size = "h-32" }) => (
+const Logo = ({ size = "h-40" }) => (
   <div
     className={`${size} flex items-center justify-center overflow-hidden`}
     style={{ aspectRatio: "1 / 1" }}
@@ -105,7 +105,7 @@ const Navbar = () => {
           </ul>
 
           <Link to="/" className="shrink-0" aria-label="Home">
-            <Logo size="h-32" />
+            <Logo size="h-40" />
           </Link>
 
           <ul className="flex items-center gap-7 flex-1 pl-8">

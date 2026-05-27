@@ -14,30 +14,12 @@ const Hero = () => {
 
       <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-end md:items-center min-h-[520px] md:min-h-[620px]">
         {/* Attorney portrait */}
-        <div className="relative flex justify-center md:justify-end pt-10">
-          <div className="relative">
+        <div className="relative flex justify-center md:justify-end pt-10 pb-10">
+          <div className="relative rounded-lg overflow-hidden shadow-[0_20px_40px_rgba(14,64,112,0.25)]">
             <img
               src={heroImage}
-              alt="Attorney Tamla Lloyd"
-              className="max-h-[560px] w-auto object-contain drop-shadow-[0_20px_30px_rgba(14,64,112,0.25)]"
-              style={{
-                maskImage:
-                  "radial-gradient(ellipse 55% 70% at 50% 45%, black 50%, rgba(0,0,0,0.6) 72%, transparent 92%)",
-                WebkitMaskImage:
-                  "radial-gradient(ellipse 55% 70% at 50% 45%, black 50%, rgba(0,0,0,0.6) 72%, transparent 92%)",
-              }}
-            />
-            <div
-              className="absolute inset-0 pointer-events-none"
-              style={{
-                background:
-                  "radial-gradient(ellipse 55% 70% at 50% 45%, rgba(30,95,163,0.18) 30%, rgba(30,95,163,0.0) 75%)",
-                mixBlendMode: "color",
-                maskImage:
-                  "radial-gradient(ellipse 55% 70% at 50% 45%, black 50%, rgba(0,0,0,0.6) 72%, transparent 92%)",
-                WebkitMaskImage:
-                  "radial-gradient(ellipse 55% 70% at 50% 45%, black 50%, rgba(0,0,0,0.6) 72%, transparent 92%)",
-              }}
+              alt="Attorney consultation at Lloyd Law Firm"
+              className="max-h-[520px] w-auto object-cover"
             />
           </div>
         </div>
