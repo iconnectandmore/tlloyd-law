@@ -19,7 +19,7 @@ const Hero = () => {
             <img
               src={heroImage}
               alt="Attorney consultation at Lloyd Law Firm"
-              className="max-h-[520px] w-auto object-cover"
+              className="max-h-[360px] md:max-h-[400px] w-auto object-cover"
             />
           </div>
         </div>
