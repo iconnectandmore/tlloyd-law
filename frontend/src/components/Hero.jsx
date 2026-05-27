@@ -12,14 +12,14 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-[#dde4ec]/85 via-[#e6ecf3]/75 to-[#cbd5e1]/85" />
       <div className="absolute inset-0 bg-[#1e5fa3]/10" />
 
-      <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-end md:items-center min-h-[520px] md:min-h-[620px]">
+      <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-start min-h-[520px] md:min-h-[620px]">
         {/* Attorney portrait */}
-        <div className="relative flex justify-center md:justify-end pt-6 pb-6">
-          <div className="relative rounded-lg overflow-hidden shadow-[0_15px_30px_rgba(14,64,112,0.25)]">
+        <div className="relative flex justify-center md:justify-end pt-6">
+          <div className="relative rounded-lg overflow-hidden shadow-[0_10px_25px_rgba(14,64,112,0.25)]">
             <img
               src={heroImage}
               alt="Attorney consultation at Lloyd Law Firm"
-              className="max-h-[240px] md:max-h-[280px] w-auto object-cover"
+              className="max-h-[160px] md:max-h-[180px] w-auto object-cover"
             />
           </div>
         </div>
