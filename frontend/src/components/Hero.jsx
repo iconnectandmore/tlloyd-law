@@ -14,12 +14,12 @@ const Hero = () => {
 
       <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-end md:items-center min-h-[520px] md:min-h-[620px]">
         {/* Attorney portrait */}
-        <div className="relative flex justify-center md:justify-end pt-10 pb-10">
-          <div className="relative rounded-lg overflow-hidden shadow-[0_20px_40px_rgba(14,64,112,0.25)]">
+        <div className="relative flex justify-center md:justify-end pt-6 pb-6">
+          <div className="relative rounded-lg overflow-hidden shadow-[0_15px_30px_rgba(14,64,112,0.25)]">
             <img
               src={heroImage}
               alt="Attorney consultation at Lloyd Law Firm"
-              className="max-h-[360px] md:max-h-[400px] w-auto object-cover"
+              className="max-h-[240px] md:max-h-[280px] w-auto object-cover"
             />
           </div>
         </div>

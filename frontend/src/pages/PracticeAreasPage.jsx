@@ -26,7 +26,7 @@ const PracticeAreasPage = () => {
             className="text-[#1e5fa3] text-[36px] md:text-[46px] mb-4"
             style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
-            Protect Your Family. Preserve Your Legacy.
+            Protect What Matters Most.
           </h2>
           <p
             className="text-[#64748b] text-[18px] italic mb-8"
