@@ -32,7 +32,7 @@ const NavItem = ({ link, currentPath }) => {
         <Link
           to={link.href}
           className={`inline-flex items-center gap-1 text-[13px] tracking-[0.15em] font-medium transition-colors duration-200 ${
-            active ? "text-[#c9a96e]" : "text-[#7a1a1a] hover:text-[#c9a96e]"
+            active ? "text-[#6a89b0]" : "text-[#1e5fa3] hover:text-[#6a89b0]"
           }`}
         >
           {link.label}
@@ -46,7 +46,7 @@ const NavItem = ({ link, currentPath }) => {
 
         {open && (
           <div className="absolute left-1/2 -translate-x-1/2 top-full pt-3 z-50">
-            <div className="w-72 bg-[#f3ecdd] border border-[#7a1a1a]/15 shadow-xl py-2">
+            <div className="w-72 bg-[#eaf0f7] border border-[#1e5fa3]/15 shadow-xl py-2">
               {link.children.map((c) => {
                 const sub = currentPath === c.href;
                 return (
@@ -55,8 +55,8 @@ const NavItem = ({ link, currentPath }) => {
                     to={c.href}
                     className={`block px-5 py-2.5 text-[13px] leading-tight transition-colors duration-150 ${
                       sub
-                        ? "bg-[#7a1a1a]/10 text-[#5a1414]"
-                        : "text-[#7a1a1a] hover:bg-[#7a1a1a]/8 hover:text-[#5a1414]"
+                        ? "bg-[#1e5fa3]/10 text-[#0e4070]"
+                        : "text-[#1e5fa3] hover:bg-[#1e5fa3]/8 hover:text-[#0e4070]"
                     }`}
                     style={{
                       fontFamily: "'Playfair Display', Georgia, serif",
@@ -77,7 +77,7 @@ const NavItem = ({ link, currentPath }) => {
     <Link
       to={link.href}
       className={`text-[13px] tracking-[0.15em] font-medium transition-colors duration-200 ${
-        active ? "text-[#c9a96e]" : "text-[#7a1a1a] hover:text-[#c9a96e]"
+        active ? "text-[#6a89b0]" : "text-[#1e5fa3] hover:text-[#6a89b0]"
       }`}
     >
       {link.label}
@@ -93,7 +93,7 @@ const Navbar = () => {
   const rightLinks = navLinks.slice(4);
 
   return (
-    <nav className="w-full bg-[#ece4d6] relative z-30">
+    <nav className="w-full bg-[#eef3f8] relative z-30">
       <div className="max-w-7xl mx-auto px-6">
         <div className="hidden lg:flex items-center justify-between py-3">
           <ul className="flex items-center gap-7 flex-1 justify-end pr-8">
@@ -123,7 +123,7 @@ const Navbar = () => {
           </Link>
           <button
             onClick={() => setOpen(!open)}
-            className="p-2 text-[#7a1a1a]"
+            className="p-2 text-[#1e5fa3]"
             aria-label="Toggle menu"
           >
             {open ? <X size={28} /> : <Menu size={28} />}
@@ -131,7 +131,7 @@ const Navbar = () => {
         </div>
 
         {open && (
-          <ul className="lg:hidden pb-4 flex flex-col gap-1 border-t border-[#7a1a1a]/20 pt-3">
+          <ul className="lg:hidden pb-4 flex flex-col gap-1 border-t border-[#1e5fa3]/20 pt-3">
             {navLinks.map((l) => (
               <li key={l.label}>
                 {l.children ? (
@@ -140,7 +140,7 @@ const Navbar = () => {
                       onClick={() =>
                         setOpenSub(openSub === l.label ? null : l.label)
                       }
-                      className="w-full flex items-center justify-between py-2 text-[#7a1a1a] text-[13px] tracking-[0.15em] font-medium"
+                      className="w-full flex items-center justify-between py-2 text-[#1e5fa3] text-[13px] tracking-[0.15em] font-medium"
                     >
                       {l.label}
                       <ChevronDown
@@ -160,7 +160,7 @@ const Navbar = () => {
                               setOpen(false);
                               setOpenSub(null);
                             }}
-                            className="text-[#7a1a1a] text-[13px] hover:text-[#c9a96e]"
+                            className="text-[#1e5fa3] text-[13px] hover:text-[#6a89b0]"
                           >
                             {c.label}
                           </Link>
@@ -172,7 +172,7 @@ const Navbar = () => {
                   <Link
                     to={l.href}
                     onClick={() => setOpen(false)}
-                    className="block py-2 text-[#7a1a1a] text-[13px] tracking-[0.15em] font-medium hover:text-[#c9a96e]"
+                    className="block py-2 text-[#1e5fa3] text-[13px] tracking-[0.15em] font-medium hover:text-[#6a89b0]"
                   >
                     {l.label}
                   </Link>

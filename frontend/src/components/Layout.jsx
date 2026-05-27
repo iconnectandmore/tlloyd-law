@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
   }, [pathname]);
 
   return (
-    <div className="min-h-screen w-full bg-[#ece4d6]">
+    <div className="min-h-screen w-full bg-[#eef3f8]">
       <TopBar />
       <Navbar />
       <main>{children}</main>

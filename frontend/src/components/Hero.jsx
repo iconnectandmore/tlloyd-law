@@ -10,7 +10,7 @@ const Hero = () => {
         style={{ backgroundImage: `url(${skylineImage})` }}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-[#b9a8a3]/85 via-[#c2b1a6]/75 to-[#b9a8a3]/85" />
-      <div className="absolute inset-0 bg-[#7a1a1a]/10" />
+      <div className="absolute inset-0 bg-[#1e5fa3]/10" />
 
       <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-end md:items-center min-h-[520px] md:min-h-[620px]">
         {/* Attorney portrait */}
@@ -49,7 +49,7 @@ const Hero = () => {
             {welcomeCopy}
           </p>
           <p
-            className="mt-6 italic text-[#f3e8d3] text-[18px]"
+            className="mt-6 italic text-[#e8edf4] text-[18px]"
             style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             &ldquo;{firmInfo.tagline}&rdquo;

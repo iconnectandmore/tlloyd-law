@@ -18,7 +18,7 @@ const footerLinks = [
 const Footer = () => {
   return (
     <footer>
-      <div className="bg-[#5a1414] text-[#f3e8d3]">
+      <div className="bg-[#0e4070] text-[#e8edf4]">
         <div className="max-w-7xl mx-auto px-6 py-7">
           <div className="flex justify-center mb-5">
             <div className="h-20 w-20 rounded-md overflow-hidden bg-black shadow-md">
@@ -74,9 +74,9 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="bg-[#ece4d6] text-center py-6 px-6">
+      <div className="bg-[#eef3f8] text-center py-6 px-6">
         <p
-          className="text-[#3a2a2a] text-[13px] max-w-4xl mx-auto leading-relaxed"
+          className="text-[#1f2937] text-[13px] max-w-4xl mx-auto leading-relaxed"
           style={{ fontFamily: "'Lato', sans-serif" }}
         >
           The information on this website is for general information purposes
@@ -84,7 +84,7 @@ const Footer = () => {
           individual case or situation.
         </p>
         <p
-          className="text-[#3a2a2a] text-[13px] mt-1"
+          className="text-[#1f2937] text-[13px] mt-1"
           style={{ fontFamily: "'Lato', sans-serif" }}
         >
           This information is not intended to create an attorney-client
@@ -92,12 +92,12 @@ const Footer = () => {
         </p>
         <Link
           to="/privacy-policy"
-          className="text-[#7a1a1a] text-[13px] mt-2 inline-block hover:underline"
+          className="text-[#1e5fa3] text-[13px] mt-2 inline-block hover:underline"
         >
           Privacy Policy
         </Link>
         <p
-          className="text-[#6b5e58] text-[12px] mt-4"
+          className="text-[#64748b] text-[12px] mt-4"
           style={{ fontFamily: "'Lato', sans-serif" }}
         >
           Copyright &copy; {new Date().getFullYear()} All Rights Reserved {firmInfo.name}

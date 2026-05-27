@@ -2,7 +2,7 @@
 
 .App {
   min-height: 100vh;
-  background-color: #ece4d6;
+  background-color: #eef3f8;
 }
 
 html {
@@ -11,7 +11,7 @@ html {
 
 body {
   font-family: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
-  color: #2c2422;
+  color: #111827;
 }
 
 /* Smooth fade in for sections */
@@ -32,6 +32,6 @@ section {
 
 /* Selection color */
 ::selection {
-  background: #7a1a1a;
-  color: #f3e8d3;
+  background: #1e5fa3;
+  color: #e8edf4;
 }

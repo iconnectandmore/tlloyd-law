@@ -63,18 +63,18 @@ const ContactPage = () => {
         subtitle="We'd love to hear from you"
       />
 
-      <section className="bg-gradient-to-b from-[#ebe2d4] to-[#e8dfd0] py-16 md:py-20">
+      <section className="bg-gradient-to-b from-[#e6ecf3] to-[#dde4ec] py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
           {/* Contact Info */}
           <div>
             <h2
-              className="text-[#7a1a1a] text-[32px] md:text-[40px] mb-2"
+              className="text-[#1e5fa3] text-[32px] md:text-[40px] mb-2"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               {firmInfo.name}
             </h2>
             <p
-              className="italic text-[#6b5e58] text-[17px] mb-8"
+              className="italic text-[#64748b] text-[17px] mb-8"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               &ldquo;{firmInfo.tagline}&rdquo;
@@ -82,11 +82,11 @@ const ContactPage = () => {
 
             <div className="space-y-5">
               <div className="flex items-start gap-4">
-                <div className="shrink-0 w-11 h-11 rounded-full bg-[#7a1a1a] text-white flex items-center justify-center">
+                <div className="shrink-0 w-11 h-11 rounded-full bg-[#1e5fa3] text-white flex items-center justify-center">
                   <MapPin size={18} />
                 </div>
                 <div
-                  className="text-[#2c2422] text-[15px] leading-[1.7]"
+                  className="text-[#111827] text-[15px] leading-[1.7]"
                   style={{ fontFamily: "'Lato', sans-serif" }}
                 >
                   <p className="font-bold mb-0.5">Address</p>
@@ -96,17 +96,17 @@ const ContactPage = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="shrink-0 w-11 h-11 rounded-full bg-[#7a1a1a] text-white flex items-center justify-center">
+                <div className="shrink-0 w-11 h-11 rounded-full bg-[#1e5fa3] text-white flex items-center justify-center">
                   <Phone size={18} />
                 </div>
                 <div
-                  className="text-[#2c2422] text-[15px] leading-[1.7]"
+                  className="text-[#111827] text-[15px] leading-[1.7]"
                   style={{ fontFamily: "'Lato', sans-serif" }}
                 >
                   <p className="font-bold mb-0.5">Phone</p>
                   <a
                     href={`tel:${firmInfo.phoneLink}`}
-                    className="hover:text-[#7a1a1a] transition-colors"
+                    className="hover:text-[#1e5fa3] transition-colors"
                   >
                     {firmInfo.phone}
                   </a>
@@ -114,17 +114,17 @@ const ContactPage = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="shrink-0 w-11 h-11 rounded-full bg-[#7a1a1a] text-white flex items-center justify-center">
+                <div className="shrink-0 w-11 h-11 rounded-full bg-[#1e5fa3] text-white flex items-center justify-center">
                   <Mail size={18} />
                 </div>
                 <div
-                  className="text-[#2c2422] text-[15px] leading-[1.7]"
+                  className="text-[#111827] text-[15px] leading-[1.7]"
                   style={{ fontFamily: "'Lato', sans-serif" }}
                 >
                   <p className="font-bold mb-0.5">Email</p>
                   <a
                     href={`mailto:${firmInfo.email}`}
-                    className="hover:text-[#7a1a1a] transition-colors"
+                    className="hover:text-[#1e5fa3] transition-colors"
                   >
                     {firmInfo.email}
                   </a>
@@ -132,11 +132,11 @@ const ContactPage = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="shrink-0 w-11 h-11 rounded-full bg-[#7a1a1a] text-white flex items-center justify-center">
+                <div className="shrink-0 w-11 h-11 rounded-full bg-[#1e5fa3] text-white flex items-center justify-center">
                   <Clock size={18} />
                 </div>
                 <div
-                  className="text-[#2c2422] text-[15px] leading-[1.7]"
+                  className="text-[#111827] text-[15px] leading-[1.7]"
                   style={{ fontFamily: "'Lato', sans-serif" }}
                 >
                   <p className="font-bold mb-0.5">Office Hours</p>
@@ -150,7 +150,7 @@ const ContactPage = () => {
                 href={firmInfo.social.linkedin}
                 target="_blank"
                 rel="noreferrer"
-                className="w-10 h-10 rounded-full bg-[#7a1a1a] hover:bg-[#5a1414] text-white flex items-center justify-center transition-colors"
+                className="w-10 h-10 rounded-full bg-[#1e5fa3] hover:bg-[#0e4070] text-white flex items-center justify-center transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={16} />
@@ -159,7 +159,7 @@ const ContactPage = () => {
                 href={firmInfo.social.facebook}
                 target="_blank"
                 rel="noreferrer"
-                className="w-10 h-10 rounded-full bg-[#7a1a1a] hover:bg-[#5a1414] text-white flex items-center justify-center transition-colors"
+                className="w-10 h-10 rounded-full bg-[#1e5fa3] hover:bg-[#0e4070] text-white flex items-center justify-center transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook size={16} />
@@ -168,7 +168,7 @@ const ContactPage = () => {
                 href={firmInfo.social.instagram}
                 target="_blank"
                 rel="noreferrer"
-                className="w-10 h-10 rounded-full bg-[#7a1a1a] hover:bg-[#5a1414] text-white flex items-center justify-center transition-colors"
+                className="w-10 h-10 rounded-full bg-[#1e5fa3] hover:bg-[#0e4070] text-white flex items-center justify-center transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram size={16} />
@@ -177,16 +177,16 @@ const ContactPage = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-[#f5ecdc]/80 border border-white/60 p-8 shadow-sm">
+          <div className="bg-[#f3f6fa]/80 border border-white/60 p-8 shadow-sm">
             <h3
-              className="text-[#7a1a1a] text-[26px] mb-6"
+              className="text-[#1e5fa3] text-[26px] mb-6"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               Send Us a Message
             </h3>
             <form onSubmit={onSubmit} className="space-y-4">
               <div>
-                <label className="block text-[#3a2a2a] text-[13px] tracking-wide mb-1.5 font-medium">
+                <label className="block text-[#1f2937] text-[13px] tracking-wide mb-1.5 font-medium">
                   Full Name *
                 </label>
                 <input
@@ -194,13 +194,13 @@ const ContactPage = () => {
                   name="name"
                   value={form.name}
                   onChange={onChange}
-                  className="w-full px-4 py-2.5 bg-white/80 border border-[#c9a96e]/40 focus:border-[#7a1a1a] focus:outline-none text-[#2c2422] text-[15px]"
+                  className="w-full px-4 py-2.5 bg-white/80 border border-[#6a89b0]/40 focus:border-[#1e5fa3] focus:outline-none text-[#111827] text-[15px]"
                   required
                 />
               </div>
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-[#3a2a2a] text-[13px] tracking-wide mb-1.5 font-medium">
+                  <label className="block text-[#1f2937] text-[13px] tracking-wide mb-1.5 font-medium">
                     Email *
                   </label>
                   <input
@@ -208,12 +208,12 @@ const ContactPage = () => {
                     name="email"
                     value={form.email}
                     onChange={onChange}
-                    className="w-full px-4 py-2.5 bg-white/80 border border-[#c9a96e]/40 focus:border-[#7a1a1a] focus:outline-none text-[#2c2422] text-[15px]"
+                    className="w-full px-4 py-2.5 bg-white/80 border border-[#6a89b0]/40 focus:border-[#1e5fa3] focus:outline-none text-[#111827] text-[15px]"
                     required
                   />
                 </div>
                 <div>
-                  <label className="block text-[#3a2a2a] text-[13px] tracking-wide mb-1.5 font-medium">
+                  <label className="block text-[#1f2937] text-[13px] tracking-wide mb-1.5 font-medium">
                     Phone
                   </label>
                   <input
@@ -221,12 +221,12 @@ const ContactPage = () => {
                     name="phone"
                     value={form.phone}
                     onChange={onChange}
-                    className="w-full px-4 py-2.5 bg-white/80 border border-[#c9a96e]/40 focus:border-[#7a1a1a] focus:outline-none text-[#2c2422] text-[15px]"
+                    className="w-full px-4 py-2.5 bg-white/80 border border-[#6a89b0]/40 focus:border-[#1e5fa3] focus:outline-none text-[#111827] text-[15px]"
                   />
                 </div>
               </div>
               <div>
-                <label className="block text-[#3a2a2a] text-[13px] tracking-wide mb-1.5 font-medium">
+                <label className="block text-[#1f2937] text-[13px] tracking-wide mb-1.5 font-medium">
                   How can we help? *
                 </label>
                 <textarea
@@ -234,14 +234,14 @@ const ContactPage = () => {
                   value={form.message}
                   onChange={onChange}
                   rows={5}
-                  className="w-full px-4 py-2.5 bg-white/80 border border-[#c9a96e]/40 focus:border-[#7a1a1a] focus:outline-none text-[#2c2422] text-[15px] resize-none"
+                  className="w-full px-4 py-2.5 bg-white/80 border border-[#6a89b0]/40 focus:border-[#1e5fa3] focus:outline-none text-[#111827] text-[15px] resize-none"
                   required
                 />
               </div>
               <button
                 type="submit"
                 disabled={submitting}
-                className="inline-flex items-center gap-2 bg-[#7a1a1a] hover:bg-[#5a1414] disabled:bg-[#7a1a1a]/60 disabled:cursor-not-allowed text-white px-7 py-3 text-[13px] tracking-[0.15em] font-medium transition-colors duration-200 shadow-sm"
+                className="inline-flex items-center gap-2 bg-[#1e5fa3] hover:bg-[#0e4070] disabled:bg-[#1e5fa3]/60 disabled:cursor-not-allowed text-white px-7 py-3 text-[13px] tracking-[0.15em] font-medium transition-colors duration-200 shadow-sm"
               >
                 {submitting ? (
                   <>

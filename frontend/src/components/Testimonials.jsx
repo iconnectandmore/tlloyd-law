@@ -19,7 +19,7 @@ const StarRow = () => (
 const TestimonialCard = ({ t }) => (
   <div className="px-6 md:px-10">
     <p
-      className="text-[#2c2422] text-[15px] md:text-[16px] leading-[1.8]"
+      className="text-[#111827] text-[15px] md:text-[16px] leading-[1.8]"
       style={{ fontFamily: "'Lato', sans-serif" }}
     >
       <span className="font-bold">&ldquo;{t.highlight}&rdquo;</span>{" "}
@@ -27,14 +27,14 @@ const TestimonialCard = ({ t }) => (
     </p>
     <StarRow />
     <p
-      className="italic text-[#6b5e58] text-[14px] mt-2"
+      className="italic text-[#64748b] text-[14px] mt-2"
       style={{ fontFamily: "'Lato', sans-serif" }}
     >
       This review is from a person who hired this attorney.
     </p>
-    <p className="text-[#3a2a2a] text-[14px] mt-1 font-medium">Hired attorney</p>
-    <div className="text-[#6b5e58] text-[14px] mt-3">---</div>
-    <p className="mt-2 text-[#3a2a2a] text-[15px]">
+    <p className="text-[#1f2937] text-[14px] mt-1 font-medium">Hired attorney</p>
+    <div className="text-[#64748b] text-[14px] mt-3">---</div>
+    <p className="mt-2 text-[#1f2937] text-[15px]">
       <span className="font-bold">{t.name}</span>, {t.date}
     </p>
   </div>
@@ -65,7 +65,7 @@ const Testimonials = () => {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between mb-8">
           <h2
-            className="text-[#6b8a6b] text-[42px] md:text-[52px] font-normal"
+            className="text-[#3a4a5f] text-[42px] md:text-[52px] font-normal"
             style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             Testimonials
@@ -74,14 +74,14 @@ const Testimonials = () => {
             <button
               onClick={prev}
               aria-label="Previous"
-              className="w-9 h-9 rounded-full bg-[#3a2a2a] hover:bg-[#7a1a1a] text-white flex items-center justify-center transition-colors duration-200"
+              className="w-9 h-9 rounded-full bg-[#1f2937] hover:bg-[#1e5fa3] text-white flex items-center justify-center transition-colors duration-200"
             >
               <ChevronLeft size={20} />
             </button>
             <button
               onClick={next}
               aria-label="Next"
-              className="w-9 h-9 rounded-full bg-[#3a2a2a] hover:bg-[#7a1a1a] text-white flex items-center justify-center transition-colors duration-200"
+              className="w-9 h-9 rounded-full bg-[#1f2937] hover:bg-[#1e5fa3] text-white flex items-center justify-center transition-colors duration-200"
             >
               <ChevronRight size={20} />
             </button>
@@ -97,7 +97,7 @@ const Testimonials = () => {
         <div className="flex justify-center mt-12">
           <Link
             to="/practice-areas"
-            className="bg-[#7a1a1a] hover:bg-[#5a1414] text-white px-8 py-3.5 text-[14px] tracking-wide font-medium transition-colors duration-200 shadow-sm"
+            className="bg-[#1e5fa3] hover:bg-[#0e4070] text-white px-8 py-3.5 text-[14px] tracking-wide font-medium transition-colors duration-200 shadow-sm"
           >
             learn more about our practice areas
           </Link>

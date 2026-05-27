@@ -12,15 +12,15 @@ const BlogPage = () => {
         subtitle="Guidance on estate planning, mediation, and the matters that protect your future"
       />
 
-      <section className="bg-gradient-to-b from-[#ebe2d4] to-[#e8dfd0] py-16 md:py-20">
+      <section className="bg-gradient-to-b from-[#e6ecf3] to-[#dde4ec] py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post) => (
               <article
                 key={post.id}
-                className="bg-[#f5ecdc]/85 border border-white/60 overflow-hidden flex flex-col hover:shadow-lg transition-shadow duration-300"
+                className="bg-[#f3f6fa]/85 border border-white/60 overflow-hidden flex flex-col hover:shadow-lg transition-shadow duration-300"
               >
-                <div className="aspect-[16/10] overflow-hidden bg-[#e0d4c2]">
+                <div className="aspect-[16/10] overflow-hidden bg-[#cbd5e1]">
                   <img
                     src={post.image}
                     alt={post.title}
@@ -28,8 +28,8 @@ const BlogPage = () => {
                   />
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
-                  <div className="flex items-center gap-3 text-[12px] text-[#6b5e58] mb-3">
-                    <span className="uppercase tracking-wider text-[#7a1a1a] font-semibold">
+                  <div className="flex items-center gap-3 text-[12px] text-[#64748b] mb-3">
+                    <span className="uppercase tracking-wider text-[#1e5fa3] font-semibold">
                       {post.category}
                     </span>
                     <span>•</span>
@@ -39,20 +39,20 @@ const BlogPage = () => {
                     </span>
                   </div>
                   <h3
-                    className="text-[#7a1a1a] text-[20px] mb-3 leading-snug"
+                    className="text-[#1e5fa3] text-[20px] mb-3 leading-snug"
                     style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                   >
                     {post.title}
                   </h3>
                   <p
-                    className="text-[#3a2a2a] text-[14px] leading-[1.7] flex-grow"
+                    className="text-[#1f2937] text-[14px] leading-[1.7] flex-grow"
                     style={{ fontFamily: "'Lato', sans-serif" }}
                   >
                     {post.excerpt}
                   </p>
                   <button
                     type="button"
-                    className="inline-flex items-center gap-2 mt-5 text-[#7a1a1a] hover:text-[#5a1414] text-[13px] font-semibold tracking-wide transition-colors"
+                    className="inline-flex items-center gap-2 mt-5 text-[#1e5fa3] hover:text-[#0e4070] text-[13px] font-semibold tracking-wide transition-colors"
                   >
                     READ ARTICLE <ArrowRight size={14} />
                   </button>
