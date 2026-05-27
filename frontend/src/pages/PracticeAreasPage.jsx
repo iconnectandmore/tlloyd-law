@@ -16,7 +16,7 @@ const PracticeAreasPage = () => {
   return (
     <>
       <PageHeader
-        title="Practice Areas"
+        title="Protect What Matters Most"
         subtitle="Personalized legal services tailored to your needs"
       />
 
@@ -26,7 +26,7 @@ const PracticeAreasPage = () => {
             className="text-[#1e5fa3] text-[36px] md:text-[46px] mb-4"
             style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
-            Protect What Matters Most.
+            Protect Your Family. Preserve Your Legacy.
           </h2>
           <p
             className="text-[#64748b] text-[18px] italic mb-8"
