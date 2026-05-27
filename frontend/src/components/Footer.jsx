@@ -21,13 +21,11 @@ const Footer = () => {
       <div className="bg-[#0e4070] text-[#e8edf4]">
         <div className="max-w-7xl mx-auto px-6 py-7">
           <div className="flex justify-center mb-5">
-            <div className="h-24 w-24 overflow-hidden">
-              <img
-                src={firmInfo.logo}
-                alt="Lloyd Law Firm, PLLC"
-                className="h-full w-full object-contain"
-              />
-            </div>
+            <img
+              src={firmInfo.logoHorizontal}
+              alt="Lloyd Law Firm, PLLC"
+              className="h-28 md:h-32 w-auto object-contain"
+            />
           </div>
           <ul className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
             {footerLinks.map((l) => (
