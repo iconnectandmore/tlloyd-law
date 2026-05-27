@@ -3,16 +3,15 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { navLinks, firmInfo } from "../mock";
 
-const Logo = ({ size = "h-24" }) => (
+const Logo = ({ size = "h-32" }) => (
   <div
-    className={`${size} flex items-center justify-center rounded-md overflow-hidden bg-[#0e4070] shadow-sm`}
+    className={`${size} flex items-center justify-center overflow-hidden`}
     style={{ aspectRatio: "1 / 1" }}
   >
     <img
       src={firmInfo.logo}
       alt="Lloyd Law Firm, PLLC"
-      className="h-full w-full object-contain p-1"
-      style={{ mixBlendMode: "screen" }}
+      className="h-full w-full object-contain"
     />
   </div>
 );
@@ -106,7 +105,7 @@ const Navbar = () => {
           </ul>
 
           <Link to="/" className="shrink-0" aria-label="Home">
-            <Logo size="h-24" />
+            <Logo size="h-32" />
           </Link>
 
           <ul className="flex items-center gap-7 flex-1 pl-8">
@@ -120,7 +119,7 @@ const Navbar = () => {
 
         <div className="flex lg:hidden items-center justify-between py-2">
           <Link to="/" aria-label="Home">
-            <Logo size="h-14" />
+            <Logo size="h-20" />
           </Link>
           <button
             onClick={() => setOpen(!open)}
