@@ -5,6 +5,8 @@ import { Toaster } from "./components/ui/toaster";
 import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
+import OurFirmPage from "./pages/OurFirmPage";
+import MeetTheAttorneyPage from "./pages/MeetTheAttorneyPage";
 import PracticeAreasPage from "./pages/PracticeAreasPage";
 import ReviewsPage from "./pages/ReviewsPage";
 import FAQPage from "./pages/FAQPage";
@@ -24,6 +26,8 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/about/our-firm" element={<OurFirmPage />} />
+            <Route path="/about/meet-the-attorney" element={<MeetTheAttorneyPage />} />
             <Route path="/practice-areas" element={<PracticeAreasPage />} />
             <Route path="/reviews" element={<ReviewsPage />} />
             <Route path="/faq" element={<FAQPage />} />

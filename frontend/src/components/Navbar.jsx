@@ -23,15 +23,19 @@ const NavItem = ({ link, currentPath }) => {
     (link.children && link.children.some((c) => c.href === currentPath));
 
   if (link.children) {
+    const ParentEl = link.href ? Link : "div";
+    const parentProps = link.href
+      ? { to: link.href }
+      : { role: "button", tabIndex: 0 };
     return (
       <div
         className="relative"
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}
       >
-        <Link
-          to={link.href}
-          className={`inline-flex items-center gap-1 text-[13px] tracking-[0.15em] font-medium transition-colors duration-200 ${
+        <ParentEl
+          {...parentProps}
+          className={`inline-flex items-center gap-1 cursor-pointer text-[13px] tracking-[0.15em] font-medium transition-colors duration-200 ${
             active ? "text-[#6a89b0]" : "text-[#1e5fa3] hover:text-[#6a89b0]"
           }`}
         >
@@ -42,7 +46,7 @@ const NavItem = ({ link, currentPath }) => {
               open ? "rotate-180" : ""
             }`}
           />
-        </Link>
+        </ParentEl>
 
         {open && (
           <div className="absolute left-1/2 -translate-x-1/2 top-full pt-3 z-50">

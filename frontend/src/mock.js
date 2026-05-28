@@ -55,7 +55,14 @@ export const attorney = {
 
 export const navLinks = [
   { label: "HOME", href: "/" },
-  { label: "ABOUT US", href: "/about" },
+  {
+    label: "ABOUT US",
+    href: null,
+    children: [
+      { label: "Our Firm", href: "/about/our-firm" },
+      { label: "Meet the Attorney", href: "/about/meet-the-attorney" },
+    ],
+  },
   { label: "REVIEWS", href: "/reviews" },
   { label: "FAQ", href: "/faq" },
   { label: "CONTACT", href: "/contact" },

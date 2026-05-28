@@ -5,7 +5,8 @@ import { firmInfo } from "../mock";
 
 const footerLinks = [
   { label: "Home", href: "/" },
-  { label: "About Us", href: "/about" },
+  { label: "Our Firm", href: "/about/our-firm" },
+  { label: "Meet the Attorney", href: "/about/meet-the-attorney" },
   { label: "Reviews", href: "/reviews" },
   { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact" },
