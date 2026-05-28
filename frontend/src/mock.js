@@ -376,6 +376,15 @@ export const faqs = [
   },
 ];
 
+export const starRatings = [
+  {
+    id: 101,
+    name: "Angelica S.",
+    date: "October 26, 2020",
+    stars: 5,
+  },
+];
+
 export const testimonials = [
   {
     id: 1,
