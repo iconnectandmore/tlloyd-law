@@ -67,10 +67,17 @@ const PracticeAreasPage = () => {
           <div className="grid md:grid-cols-2 gap-6">
             {estatePlanningServices.map((s, i) => {
               const Icon = serviceIcons[i % serviceIcons.length];
+              const isLastOdd =
+                i === estatePlanningServices.length - 1 &&
+                estatePlanningServices.length % 2 === 1;
               return (
                 <div
                   key={s.title}
-                  className="bg-[#f3f6fa]/80 border border-white/60 p-8 hover:shadow-lg transition-shadow duration-300 flex gap-5"
+                  className={`bg-[#f3f6fa]/80 border border-white/60 p-8 hover:shadow-lg transition-shadow duration-300 flex gap-5 ${
+                    isLastOdd
+                      ? "md:col-span-2 md:max-w-xl md:mx-auto md:w-full"
+                      : ""
+                  }`}
                 >
                   <div className="shrink-0 w-12 h-12 rounded-full bg-[#1e5fa3] text-white flex items-center justify-center">
                     <Icon size={22} strokeWidth={2} />
