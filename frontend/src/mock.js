@@ -379,51 +379,38 @@ export const faqs = [
 export const testimonials = [
   {
     id: 1,
-    highlight: "Amazing!",
-    text:
-      "Took the time to explain everything to me and was very helpful in completing my documents. I would definitely recommend it!",
-    name: "Quanesha L S.",
-    date: "March 7, 2025",
+    highlight: "Great Experience!",
+    text: "Efficient, clear and to the point, great experience.",
+    name: "Larissa G.",
+    date: "August 7, 2025",
   },
   {
     id: 2,
-    highlight: "Made the process easy!",
-    text:
-      "Doing estate planning is something people often put off. My husband and I were pleasantly surprised at how easy Attorney Lloyd made the process. She is also incredibly patient and very organized. I highly recommend her.",
-    name: "Erin B.",
-    date: "November 28, 2024",
+    highlight: "Excellent Service!",
+    text: "Fast, efficient service working with a professional.",
+    name: "Allen H.",
+    date: "August 23, 2024",
   },
   {
     id: 3,
-    highlight: "Will and Estate Planning!",
-    text:
-      "Very polite, professional and knowledgeable in estate planning. Made the process seamless and easy.",
-    name: "Allen H.",
-    date: "July 29, 2024",
+    highlight: "Easy to Work With!",
+    text: "Ease in which we worked together, timely responses.",
+    name: "Erin B.",
+    date: "August 10, 2023",
   },
   {
     id: 4,
-    highlight: "Highly Recommended!",
-    text:
-      "I came into the process feeling confused and overwhelmed. From the very beginning, Attorney Lloyd provided not only her deep knowledge but also a kind and patient approach that made everything easier to understand. She took the time to explain each step, ensuring I felt supported rather than lost in legal complexities.",
+    highlight: "Truly Listened!",
+    text: "She understood every bit and piece I was telling and asking her.",
     name: "Eugene S.",
-    date: "April 15, 2025",
+    date: "March 7, 2023",
   },
   {
     id: 5,
-    highlight: "Truly Grateful",
-    text:
-      "I have no words to express my gratitude to Attorney Lloyd for the support and professionalism demonstrated during my case. She managed everything with compassion, knowledge and empathy. A wonderful person and a very qualified attorney.",
-    name: "Ana Monaghan",
-    date: "April 14, 2025",
-  },
-  {
-    id: 6,
-    highlight: "Excellent service",
-    text:
-      "Fast, efficient service working with a true professional. She understood every bit and piece I was telling and asking her. Communication was excellent throughout.",
-    name: "Arnet Jenkins",
-    date: "April 30, 2025",
+    highlight: "Amazing!",
+    text: "Very friendly, professional and expert advice. She was amazing. Answered all questions with accuracy.",
+    name: "Quanesha L. S.",
+    date: "March 21, 2022",
   },
 ];
 
