@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
-import { testimonials } from "../mock";
+import { testimonials, starRatings } from "../mock";
 
 const StarRow = () => (
   <div className="flex gap-1 my-3">
@@ -93,6 +93,30 @@ const Testimonials = () => {
             <TestimonialCard key={`${t.id}-${i}`} t={t} />
           ))}
         </div>
+
+        {starRatings && starRatings.length > 0 && (
+          <div className="mt-12 flex flex-wrap justify-center gap-4">
+            {starRatings.map((r) => (
+              <div
+                key={r.id}
+                className="bg-[#f3f6fa]/85 border border-white/60 px-5 py-3 text-center min-w-[200px]"
+              >
+                <div className="flex justify-center gap-0.5 mb-1">
+                  {[0, 1, 2, 3, 4].map((i) => (
+                    <Star
+                      key={i}
+                      size={14}
+                      className="text-[#e8b923] fill-[#e8b923]"
+                      strokeWidth={1}
+                    />
+                  ))}
+                </div>
+                <p className="text-[#1f2937] text-[14px] font-bold">{r.name}</p>
+                <p className="text-[#64748b] text-[12px]">{r.date}</p>
+              </div>
+            ))}
+          </div>
+        )}
 
         <div className="flex justify-center mt-12">
           <Link
