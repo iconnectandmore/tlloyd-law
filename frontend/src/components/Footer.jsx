@@ -25,7 +25,7 @@ const Footer = () => {
             <img
               src={firmInfo.logoHorizontal}
               alt="Lloyd Law Firm, PLLC"
-              className="h-28 md:h-32 w-auto object-contain"
+              className="h-44 md:h-52 w-auto object-contain"
             />
           </div>
           <ul className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
