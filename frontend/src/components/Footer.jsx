@@ -101,6 +101,20 @@ const Footer = () => {
         >
           Copyright &copy; {new Date().getFullYear()} All Rights Reserved {firmInfo.name}
         </p>
+        <p
+          className="text-[#64748b] text-[12px] mt-1"
+          style={{ fontFamily: "'Lato', sans-serif" }}
+        >
+          Developed by{" "}
+          <a
+            href="https://www.techtronicsmedia.com"
+            target="_blank"
+            rel="noreferrer"
+            className="text-[#1e5fa3] hover:underline"
+          >
+            Techtronics Media
+          </a>
+        </p>
       </div>
     </footer>
   );
