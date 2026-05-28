@@ -3,8 +3,8 @@ import { firmInfo } from "../mock";
 
 const TopBar = () => {
   return (
-    <div className="w-full bg-gradient-to-b from-[#0e4070] to-[#1e5fa3] text-[#e8edf4] text-[13px] tracking-wide">
-      <div className="max-w-7xl mx-auto px-6 py-2.5 flex items-center justify-center gap-3 flex-wrap">
+    <div className="w-full bg-gradient-to-b from-[#0e4070] to-[#1e5fa3] text-[#e8edf4] text-[12px] sm:text-[13px] tracking-wide">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2 sm:py-2.5 flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-3 text-center">
         <span className="font-light">
           {firmInfo.address}, {firmInfo.city}
         </span>

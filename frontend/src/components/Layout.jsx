@@ -13,8 +13,10 @@ const Layout = ({ children }) => {
 
   return (
     <div className="min-h-screen w-full bg-[#eef3f8]">
-      <TopBar />
-      <Navbar />
+      <header className="sticky top-0 z-40 shadow-sm">
+        <TopBar />
+        <Navbar />
+      </header>
       <main>{children}</main>
       <Footer />
     </div>
