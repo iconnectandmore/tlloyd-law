@@ -24,7 +24,7 @@ export const attorney = {
   name: "Tamla N. Lloyd",
   title: "Managing Attorney",
   headshot:
-    "https://customer-assets.emergentagent.com/job_lloyd-law-preview/artifacts/9ve07xft_ChatGPT%20Image%20May%2027%2C%202026%2C%2011_49_27%20AM.png",
+    "https://customer-assets.emergentagent.com/job_lloyd-law-preview/artifacts/xh8u1td2_ChatGPT%20Image%20May%2027%2C%202026%2C%2011_28_50%20AM.png",
   bio: [
     "Tamla, founder and owner of Lloyd Law Firm in Jacksonville, Florida, is a compassionate and dedicated Attorney committed to guiding individuals, families, and businesses through complex legal matters with care, creativity, professionalism, and integrity.",
     "With a focus on estate planning, she provides tailored legal solutions that align with each client's unique needs and goals while upholding the rule of law.",

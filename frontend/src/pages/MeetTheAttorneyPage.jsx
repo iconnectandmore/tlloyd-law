@@ -15,7 +15,7 @@ const MeetTheAttorneyPage = () => {
       {/* Bio + headshot */}
       <section className="bg-gradient-to-b from-[#e6ecf3] to-[#dde4ec] py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-[320px_1fr] gap-12 items-start">
-          <div className="flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-center">
             <div className="w-full max-w-[300px] rounded-sm overflow-hidden shadow-xl border-4 border-white">
               <img
                 src={attorney.headshot}
@@ -24,13 +24,13 @@ const MeetTheAttorneyPage = () => {
               />
             </div>
             <h2
-              className="mt-6 text-[28px] text-[#1e5fa3] text-center md:text-left"
+              className="mt-6 text-[28px] text-[#1e5fa3] text-center"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               {attorney.name}
             </h2>
             <p
-              className="text-[#64748b] text-[15px] tracking-wide text-center md:text-left"
+              className="text-[#64748b] text-[15px] tracking-wide text-center"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               {attorney.title}
