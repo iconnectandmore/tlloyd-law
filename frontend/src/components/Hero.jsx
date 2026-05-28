@@ -29,7 +29,7 @@ const Hero = () => {
         </div>
 
         {/* Welcome text */}
-        <div className="text-white pb-14 md:pb-0 md:pl-6 max-w-xl">
+        <div className="text-white pb-14 md:pb-0 md:pl-6 max-w-xl mx-auto md:mx-0 text-center md:text-left">
           <h1
             className="text-[34px] md:text-[42px] leading-[1.15] font-normal mb-2"
             style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
