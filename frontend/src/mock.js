@@ -435,22 +435,161 @@ export const welcomeCopy =
 export const blogPosts = [
   {
     id: 1,
+    slug: "5-reasons-every-florida-family-needs-an-estate-plan",
     title: "5 Reasons Every Florida Family Needs an Estate Plan",
     excerpt:
       "Whether you have substantial assets or you're just starting out, an estate plan is one of the most important steps you can take to protect your loved ones.",
     date: "May 12, 2025",
     category: "Estate Planning",
     image:
-      "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&auto=format&fit=crop&q=70",
+      "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&auto=format&fit=crop&q=70",
+    intro:
+      "Many Floridians put off estate planning, believing it is only for the wealthy or for people much later in life. The reality is that an estate plan benefits nearly every adult, regardless of income or family size. Here are five practical reasons every Florida family should put a plan in place.",
+    sections: [
+      {
+        heading: "1. You Choose How Your Assets Are Distributed",
+        body: [
+          "Without an estate plan, Florida's intestacy laws decide who inherits your property. These default rules apply a one-size-fits-all formula that may not reflect your wishes — especially in blended families, second marriages, or close relationships outside of legal family.",
+          "A simple will or trust lets you direct exactly who receives what, on your terms.",
+        ],
+      },
+      {
+        heading: "2. You Can Name Guardians for Minor Children",
+        body: [
+          "If you have minor children, a properly executed will is the only document where you can nominate the person you want to raise them if something happens to you. Without that nomination, a Florida court will choose — often based on limited information about your family.",
+          "Naming a guardian in advance gives you peace of mind that your children will be cared for by someone you trust.",
+        ],
+      },
+      {
+        heading: "3. You Can Avoid or Minimize Probate",
+        body: [
+          "Probate is the court-supervised process of administering an estate. In Florida, it can take months to over a year, involves filing fees and attorney costs, and is a matter of public record.",
+          "Tools such as a Lady Bird Deed, beneficiary designations, and properly funded trusts can transfer property outside of probate, saving your family time, money, and stress.",
+        ],
+      },
+      {
+        heading: "4. You Can Plan for Incapacity, Not Just Death",
+        body: [
+          "An estate plan is not only about what happens after you pass away. A Durable Power of Attorney, a Designation of Health Care Surrogate, and a Living Will allow trusted individuals to make financial and medical decisions if you become unable to do so.",
+          "Without these documents, your family may need to seek a court-appointed guardian — a process that is costly, slow, and emotionally taxing during an already difficult time.",
+        ],
+      },
+      {
+        heading: "5. You Can Reduce Family Conflict",
+        body: [
+          "Few things create more tension among family members than uncertainty after a loved one passes. Clear, written instructions reduce the likelihood of disputes by leaving little room for guesswork.",
+          "A thoughtful estate plan tells your family exactly what you wanted — and allows them to grieve without having to fight.",
+        ],
+      },
+    ],
+    closing:
+      "At Lloyd Law Firm, we help Florida individuals and families build estate plans that fit their lives. Whether you are creating your first plan or updating documents you put in place years ago, we are here to guide you with care and clarity.",
   },
   {
     id: 2,
+    slug: "understanding-the-lady-bird-deed-in-florida",
     title: "Understanding the Lady Bird Deed in Florida",
     excerpt:
       "The Enhanced Life Estate Deed, commonly called a Lady Bird Deed, is a powerful Florida tool to transfer property without probate.",
     date: "April 28, 2025",
     category: "Estate Planning",
     image:
-      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&auto=format&fit=crop&q=70",
+      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&auto=format&fit=crop&q=70",
+    intro:
+      "Few estate planning tools are as uniquely Florida as the Lady Bird Deed. Officially known as an Enhanced Life Estate Deed, it can be a simple, affordable way to pass real estate to your loved ones outside of probate while keeping full control during your lifetime.",
+    sections: [
+      {
+        heading: "What Is a Lady Bird Deed?",
+        body: [
+          "A Lady Bird Deed is a special type of deed that lets you keep complete ownership and control of your home or other Florida real estate during your lifetime, while naming one or more beneficiaries (called \"remainder beneficiaries\") who automatically receive the property when you pass away.",
+          "Unlike a traditional life estate deed, you retain the right to sell, mortgage, lease, or revoke the deed at any time — without needing the beneficiaries' permission.",
+        ],
+      },
+      {
+        heading: "How Does It Work?",
+        body: [
+          "While you are alive, nothing about your ownership changes. You can live in the property, rent it out, refinance it, or sell it. The named beneficiaries have no legal interest until your death.",
+          "When you pass away, the property automatically transfers to the named beneficiaries — no probate required. The transfer is documented by recording your death certificate along with a short affidavit in the public records.",
+        ],
+      },
+      {
+        heading: "Key Benefits",
+        body: [
+          "Avoids probate for the real estate.",
+          "You keep full control during your lifetime.",
+          "Generally does not trigger gift tax issues during your life.",
+          "Can preserve the Florida homestead protections you enjoy.",
+          "Beneficiaries typically receive a stepped-up tax basis at your death, potentially reducing capital gains tax if they later sell.",
+        ],
+      },
+      {
+        heading: "Important Considerations",
+        body: [
+          "A Lady Bird Deed is powerful, but it is not right for every situation. It does not address other assets like bank accounts, investments, or personal property. It also is not a substitute for a comprehensive estate plan that addresses incapacity, healthcare decisions, and other concerns.",
+          "If a beneficiary later experiences creditor issues, divorce, or bankruptcy, future complications can arise once they inherit the property. Careful planning matters.",
+        ],
+      },
+    ],
+    closing:
+      "If you own real estate in Florida and want to keep things simple for your loved ones, a Lady Bird Deed may be a smart addition to your estate plan. At Lloyd Law Firm, we will review your goals and let you know whether a Lady Bird Deed or another tool best fits your situation.",
+  },
+  {
+    id: 3,
+    slug: "do-i-really-need-a-will-in-florida",
+    title: "Do I Really Need a Will in Florida?",
+    excerpt:
+      "It is one of the most common questions clients ask. The short answer is: almost certainly, yes — and here's why.",
+    date: "March 18, 2025",
+    category: "Estate Planning",
+    image:
+      "https://images.unsplash.com/photo-1589994965851-a8f479c573a9?w=1200&auto=format&fit=crop&q=70",
+    intro:
+      "Many Floridians believe a will is only necessary if they have a large estate, a complicated family, or significant assets. In truth, a will is one of the most basic — and most important — documents nearly every adult should have. Here is what happens with and without one in Florida.",
+    sections: [
+      {
+        heading: "What Happens If You Die Without a Will?",
+        body: [
+          "If you pass away without a valid will, Florida's intestacy laws determine who inherits your property. These default rules follow a strict order based on your family relationships, not your personal wishes.",
+          "For example, if you are married with children from a previous relationship, your spouse and children may have to share your estate in proportions you may not have intended. Unmarried partners, close friends, stepchildren, and charities receive nothing under intestacy — no matter how important they were to you.",
+        ],
+      },
+      {
+        heading: "Why a Will Matters — Even If You Don't Think You're \"Wealthy\"",
+        body: [
+          "A will is not just about money. It allows you to:",
+          "• Name a personal representative (executor) you trust to handle your estate.",
+          "• Nominate guardians for any minor children.",
+          "• Leave specific items — heirlooms, jewelry, vehicles — to specific people.",
+          "• Make charitable gifts that reflect your values.",
+          "• Reduce confusion, conflict, and delay among the people you leave behind.",
+        ],
+      },
+      {
+        heading: "Common Misconceptions",
+        body: [
+          "\"My spouse will automatically get everything.\" Not always. Florida law splits assets between a surviving spouse and children in many situations, particularly in blended families.",
+          "\"Joint accounts and beneficiary designations handle everything.\" These can transfer specific assets, but they don't cover personal items, guardianship of children, or anything left out by mistake. A will catches what beneficiary designations miss.",
+          "\"I'm too young to need a will.\" Estate planning is for any adult — especially parents of minor children and homeowners. Life is unpredictable; planning early gives you control.",
+        ],
+      },
+      {
+        heading: "What Makes a Will Valid in Florida?",
+        body: [
+          "Florida has specific legal requirements. To be valid, your will generally must be:",
+          "• In writing.",
+          "• Signed by you (the testator) at the end of the document.",
+          "• Witnessed by at least two competent witnesses, who sign in your presence and in the presence of each other.",
+          "Handwritten (holographic) wills are not valid in Florida unless they meet these formal witnessing requirements. Many do-it-yourself wills fail at this step.",
+        ],
+      },
+      {
+        heading: "Is a Will Enough?",
+        body: [
+          "A will is a great foundation, but a complete estate plan often also includes a Durable Power of Attorney, Designation of Health Care Surrogate, Living Will, and — depending on your goals — a trust or Lady Bird Deed. The right combination depends on your family, assets, and wishes.",
+        ],
+      },
+    ],
+    closing:
+      "If you have been putting off creating a will, you are not alone — but you also do not have to do it on your own. At Lloyd Law Firm, we walk you through the process step by step and create a plan that fits your life. The peace of mind is worth it.",
   },
 ];

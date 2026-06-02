@@ -13,6 +13,7 @@ import FAQPage from "./pages/FAQPage";
 import ContactPage from "./pages/ContactPage";
 import SchedulePage from "./pages/SchedulePage";
 import BlogPage from "./pages/BlogPage";
+import BlogPostPage from "./pages/BlogPostPage";
 import WhyEstatePlanningPage from "./pages/WhyEstatePlanningPage";
 import MediationServicesPage from "./pages/MediationServicesPage";
 import LegalDisclaimerPage from "./pages/LegalDisclaimerPage";
@@ -34,6 +35,7 @@ function App() {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/schedule" element={<SchedulePage />} />
             <Route path="/blog" element={<BlogPage />} />
+            <Route path="/blog/:slug" element={<BlogPostPage />} />
             <Route path="/why-estate-planning" element={<WhyEstatePlanningPage />} />
             <Route path="/mediation-services" element={<MediationServicesPage />} />
             <Route path="/legal-disclaimer" element={<LegalDisclaimerPage />} />

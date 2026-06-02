@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import PageHeader from "../components/PageHeader";
 import CTASection from "../components/CTASection";
 import { blogPosts } from "../mock";
@@ -50,12 +51,12 @@ const BlogPage = () => {
                   >
                     {post.excerpt}
                   </p>
-                  <button
-                    type="button"
+                  <Link
+                    to={`/blog/${post.slug}`}
                     className="inline-flex items-center gap-2 mt-5 text-[#1e5fa3] hover:text-[#0e4070] text-[13px] font-semibold tracking-wide transition-colors"
                   >
                     READ ARTICLE <ArrowRight size={14} />
-                  </button>
+                  </Link>
                 </div>
               </article>
             ))}
