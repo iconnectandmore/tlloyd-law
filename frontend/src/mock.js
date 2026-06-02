@@ -56,6 +56,14 @@ export const attorney = {
 export const navLinks = [
   { label: "HOME", href: "/" },
   {
+    label: "ESTATE PLANNING",
+    href: "/practice-areas",
+    children: [
+      { label: "Protect Your Family. Preserve Your Legacy.", href: "/practice-areas" },
+      { label: "Why Estate Planning Matters", href: "/why-estate-planning" },
+    ],
+  },
+  {
     label: "ABOUT US",
     href: null,
     children: [
@@ -65,16 +73,8 @@ export const navLinks = [
   },
   { label: "REVIEWS", href: "/reviews" },
   { label: "FAQ", href: "/faq" },
-  { label: "CONTACT", href: "/contact" },
-  {
-    label: "ESTATE PLANNING",
-    href: "/practice-areas",
-    children: [
-      { label: "Protect Your Family. Preserve Your Legacy.", href: "/practice-areas" },
-      { label: "Why Estate Planning Matters", href: "/why-estate-planning" },
-    ],
-  },
   { label: "SCHEDULE", href: "/schedule" },
+  { label: "CONTACT", href: "/contact" },
   { label: "BLOG", href: "/blog" },
 ];
 
