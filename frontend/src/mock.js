@@ -424,7 +424,7 @@ export const testimonials = [
 ];
 
 export const heroImage =
-  "https://customer-assets.emergentagent.com/job_lloyd-law-preview/artifacts/7eacqkys_ChatGPT%20Image%20May%2027%2C%202026%2C%2010_02_11%20AM.png";
+  "https://images.unsplash.com/photo-1714974528737-3e6c7e4d11af?w=1200&auto=format&fit=crop&q=80";
 
 export const skylineImage =
   "https://images.unsplash.com/photo-1683552424939-dfc29064d449?w=1920&auto=format&fit=crop&q=70";
