@@ -5,14 +5,14 @@ import { firmInfo } from "../mock";
 
 const footerLinks = [
   { label: "Home", href: "/" },
+  { label: "Estate Planning", href: "/practice-areas" },
   { label: "Our Firm", href: "/about/our-firm" },
   { label: "Meet the Attorney", href: "/about/meet-the-attorney" },
   { label: "Reviews", href: "/reviews" },
   { label: "FAQ", href: "/faq" },
-  { label: "Contact", href: "/contact" },
-  { label: "Estate Planning", href: "/practice-areas" },
-  { label: "Schedule", href: "/schedule" },
   { label: "Blog", href: "/blog" },
+  { label: "Contact", href: "/contact" },
+  { label: "Schedule", href: "/schedule" },
   { label: "Legal Disclaimer", href: "/legal-disclaimer" },
 ];
 
