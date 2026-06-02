@@ -230,12 +230,6 @@ const OurFirmPage = () => {
             existing documents, Lloyd Law Firm is here to help you move forward
             with confidence.
           </p>
-          <p
-            className="mt-8 italic text-[#1e5fa3] text-[22px] md:text-[26px]"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-          >
-            Trust. Legacy. Peace of Mind.
-          </p>
         </div>
       </section>
 
