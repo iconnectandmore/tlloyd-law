@@ -33,7 +33,7 @@ const WhyEstatePlanningPage = () => {
       <section className="bg-gradient-to-b from-[#e6ecf3] to-[#dde4ec] py-16 md:py-20">
         <div className="max-w-4xl mx-auto px-6">
           <p
-            className="text-[#111827] text-[17px] md:text-[18px] leading-[1.9] mb-10"
+            className="text-[#111827] text-[16px] leading-[1.9] mb-10"
             style={{ fontFamily: "'Lato', sans-serif" }}
           >
             {whyEstatePlanning.intro}
