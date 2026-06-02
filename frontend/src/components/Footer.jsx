@@ -100,13 +100,7 @@ const Footer = () => {
           className="text-[#64748b] text-[12px] mt-4"
           style={{ fontFamily: "'Lato', sans-serif" }}
         >
-          Copyright &copy; {new Date().getFullYear()}
-        </p>
-        <p
-          className="text-[#64748b] text-[12px]"
-          style={{ fontFamily: "'Lato', sans-serif" }}
-        >
-          All Rights Reserved {firmInfo.name}
+          &copy; {new Date().getFullYear()} {firmInfo.name} All Rights Reserved.
         </p>
         <p
           className="text-[#64748b] text-[12px] mt-1"
