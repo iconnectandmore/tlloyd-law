@@ -542,7 +542,7 @@ export const blogPosts = [
     date: "March 18, 2025",
     category: "Estate Planning",
     image:
-      "https://images.unsplash.com/photo-1589994965851-a8f479c573a9?w=1200&auto=format&fit=crop&q=70",
+      "https://customer-assets.emergentagent.com/job_lloyd-law-preview/artifacts/96y35q75_ChatGPT%20Image%20Jun%202%2C%202026%2C%2005_46_49%20PM.png",
     intro:
       "Many Floridians believe a will is only necessary if they have a large estate, a complicated family, or significant assets. In truth, a will is one of the most basic — and most important — documents nearly every adult should have. Here is what happens with and without one in Florida.",
     sections: [
