@@ -487,10 +487,10 @@ export const blogPosts = [
   },
   {
     id: 2,
-    slug: "understanding-the-lady-bird-deed-in-florida",
-    title: "Understanding the Lady Bird Deed in Florida",
+    slug: "understanding-lady-bird-deeds-in-florida",
+    title: "Understanding Lady Bird Deeds in Florida",
     excerpt:
-      "The Enhanced Life Estate Deed, commonly called a Lady Bird Deed, is a powerful Florida tool to transfer property without probate.",
+      "Officially known as an Enhanced Life Estate Deed, a Lady Bird Deed can be a simple, affordable way to pass Florida real estate outside of probate.",
     date: "April 28, 2025",
     category: "Estate Planning",
     image:
@@ -509,29 +509,29 @@ export const blogPosts = [
         heading: "How Does It Work?",
         body: [
           "While you are alive, nothing about your ownership changes. You can live in the property, rent it out, refinance it, or sell it. The named beneficiaries have no legal interest until your death.",
-          "When you pass away, the property automatically transfers to the named beneficiaries — no probate required. The transfer is documented by recording your death certificate along with a short affidavit in the public records.",
+          "When you pass away, the property automatically transfers to the named beneficiaries — no probate required. The transfer is typically documented by recording a certified copy of the death certificate along with an affidavit in the public records.",
         ],
       },
       {
         heading: "Key Benefits",
         body: [
-          "Avoids probate for the real estate.",
-          "You keep full control during your lifetime.",
-          "Generally does not trigger gift tax issues during your life.",
-          "Can preserve the Florida homestead protections you enjoy.",
-          "Beneficiaries typically receive a stepped-up tax basis at your death, potentially reducing capital gains tax if they later sell.",
+          "• Avoids probate for your Florida homestead or other real estate.",
+          "• You retain full ownership and control during your lifetime.",
+          "• Can help avoid gift tax concerns associated with lifetime transfers.",
+          "• Generally preserves Florida homestead protections and exemptions.",
+          "• Beneficiaries typically receive a stepped-up tax basis at death, which may reduce future capital gains taxes.",
         ],
       },
       {
         heading: "Important Considerations",
         body: [
-          "A Lady Bird Deed is powerful, but it is not right for every situation. It does not address other assets like bank accounts, investments, or personal property. It also is not a substitute for a comprehensive estate plan that addresses incapacity, healthcare decisions, and other concerns.",
-          "If a beneficiary later experiences creditor issues, divorce, or bankruptcy, future complications can arise once they inherit the property. Careful planning matters.",
+          "A Lady Bird Deed is a powerful planning tool, but it is not right for every situation. It does not address other assets such as bank accounts, investments, retirement accounts, or personal property. It also is not a substitute for a comprehensive estate plan that addresses incapacity planning, healthcare directives, powers of attorney, and other important considerations.",
+          "In addition, once beneficiaries inherit the property, their individual circumstances may affect the property. Issues such as creditor claims, divorce, lawsuits, or bankruptcy can create future complications. Careful planning is essential to ensure your goals are fully protected.",
         ],
       },
     ],
     closing:
-      "If you own real estate in Florida and want to keep things simple for your loved ones, a Lady Bird Deed may be a smart addition to your estate plan. At Lloyd Law Firm, we will review your goals and let you know whether a Lady Bird Deed or another tool best fits your situation.",
+      "If you own real estate in Florida and want to simplify the transfer process for your loved ones, a Lady Bird Deed may be a valuable addition to your estate plan. At Lloyd Law Firm, we will review your goals and help determine whether a Lady Bird Deed or another estate planning strategy is the best fit for your unique circumstances.",
   },
   {
     id: 3,
