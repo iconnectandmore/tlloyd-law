@@ -16,15 +16,14 @@ export const firmInfo = {
     instagram: "https://www.instagram.com/_llf.pllc",
   },
   scheduleUrl: "https://tidycal.com/tamla",
-  logo: "https://customer-assets.emergentagent.com/job_lloyd-law-preview/artifacts/kw1s0soj_ChatGPT%20Image%20May%2025%2C%202026%2C%2011_01_17%20AM.png",
-  logoHorizontal: "https://customer-assets.emergentagent.com/job_lloyd-law-preview/artifacts/t4dwecbw_ChatGPT%20Image%20May%2028%2C%202026%2C%2006_48_42%20PM.png",
+  logo: "/images/logo.png",
+  logoHorizontal: "/images/logo-horizontal.png",
 };
 
 export const attorney = {
   name: "Tamla N. Lloyd",
   title: "Managing Attorney",
-  headshot:
-    "https://customer-assets.emergentagent.com/job_lloyd-law-preview/artifacts/xh8u1td2_ChatGPT%20Image%20May%2027%2C%202026%2C%2011_28_50%20AM.png",
+  headshot: "/images/attorney-headshot.png",
   bio: [
     "Tamla, founder and owner of Lloyd Law Firm in Jacksonville, Florida, is a compassionate and dedicated Attorney committed to guiding individuals, families, and businesses through complex legal matters with care, creativity, professionalism, and integrity.",
     "With a focus on estate planning, she provides tailored legal solutions that align with each client's unique needs and goals while upholding the rule of law.",
@@ -423,8 +422,7 @@ export const testimonials = [
   },
 ];
 
-export const heroImage =
-  "https://customer-assets.emergentagent.com/job_lloyd-law-preview/artifacts/7eacqkys_ChatGPT%20Image%20May%2027%2C%202026%2C%2010_02_11%20AM.png";
+export const heroImage = "/images/attorney-hero.png";
 
 export const skylineImage =
   "https://images.unsplash.com/photo-1683552424939-dfc29064d449?w=1920&auto=format&fit=crop&q=70";
@@ -541,8 +539,7 @@ export const blogPosts = [
       "It is one of the most common questions clients ask. The short answer is: almost certainly, yes — and here's why.",
     date: "March 18, 2025",
     category: "Estate Planning",
-    image:
-      "https://customer-assets.emergentagent.com/job_lloyd-law-preview/artifacts/96y35q75_ChatGPT%20Image%20Jun%202%2C%202026%2C%2005_46_49%20PM.png",
+    image: "/images/blog-family-consultation.png",
     intro:
       "Many Floridians believe a will is only necessary if they have a large estate, a complicated family, or significant assets. In truth, a will is one of the most basic — and most important — documents nearly every adult should have. Here is what happens with and without one in Florida.",
     sections: [
